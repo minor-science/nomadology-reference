@@ -293,7 +293,7 @@ def givens_table():
     return "".join(out) + f'<div class="poles3"><span class="plab">Poles of the capitalist State</span>{poles}</div>'
 
 
-# ---------------------------------------------------------------- 3. The plateaus' library
+# ---------------------------------------------------------------- 3. Nomadology bibliography
 # (field, [(source, what it gave, ATP pages, against?)]); "against" marks a source Deleuze and Guattari dispute or correct.
 LIBRARY = [
     ("Myth, religion, and ancient thought", [
@@ -563,10 +563,10 @@ def main():
         page("gv1", "The axiomatic today: seven givens", "State forms · back", G_INTRO, givens_table(), S_FOOT)]))
     save("state_forms.html", web("The State's Forms", "The State's three forms", [
         ("", S_INTRO, wrap(state_table())), ("The axiomatic today: seven givens", G_INTRO, wrap(givens_table()))], S_FOOT))
-    save("library_handout.html", handout("The Plateaus' Library", [
-        page("lb1", "The plateaus' library", "Sources of plateaus 12-13 · front", L_INTRO, library_html(), L_FOOT),
+    save("library_handout.html", handout("Nomadology Bibliography", [
+        page("lb1", "Nomadology bibliography", "Sources of plateaus 12-13 · front", L_INTRO, library_html(), L_FOOT),
         page("lb1", "The workshop around the plateaus", "Library · back", W_INTRO, workshop_html(), W_FOOT)]))
-    save("library.html", web("The Plateaus' Library", "The plateaus' library", [("", L_INTRO, library_html()), ("The workshop around the plateaus", W_INTRO, workshop_html())], L_FOOT + " " + W_FOOT))
+    save("library.html", web("Nomadology Bibliography", "Nomadology bibliography", [("", L_INTRO, library_html()), ("The workshop around the plateaus", W_INTRO, workshop_html())], L_FOOT + " " + W_FOOT))
     open(os.path.join(HERE, "reference_sheets_text.md"), "w").write(text_dump() + "\n")
     n = sum(len(i) for _, i in LIBRARY)
     print(f"wrote concordance, state forms, library ({n} library entries, {len(CONCEPTS)} concepts)")

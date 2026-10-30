@@ -13,7 +13,7 @@
 - [The State's three forms in A Thousand Plateaus](https://minor-science.github.io/nomadology-reference/state_forms.html): Proposition XIII of Apparatus of Capture (459): the archaic imperial State or Urstaat, the evolved States and the modern nation-States, set out question by question.
 - [Nomadology's concepts, and how they have moved](https://minor-science.github.io/nomadology-reference/concordance.html): A concordance of the concepts of A Thousand Plateaus, plateaus 12-13 (nomos, the war machine, the apparatus of capture): where each began, CERFI and the Vincennes seminars, and later uptake.
 - [After 1980: what the record does to nomadology's claims](https://minor-science.github.io/nomadology-reference/after1980.html): Claim by claim, the archaeology, anthropology and history since A Thousand Plateaus (1980) that confirm, complicate or dispute the claims of its nomadology plateaus.
-- [The plateaus' library: works cited in the Treatise on Nomadology and Apparatus of Capture](https://minor-science.github.io/nomadology-reference/library.html): About one hundred works Deleuze and Guattari cite in A Thousand Plateaus, plateaus 12-13 (Dumézil, Clastres, Childe, Braudel, Serres, Virilio, Marx), with what each gave the plateaus.
+- [Nomadology bibliography: works cited in the Treatise on Nomadology and Apparatus of Capture](https://minor-science.github.io/nomadology-reference/library.html): About one hundred works Deleuze and Guattari cite in A Thousand Plateaus, plateaus 12-13 (Dumézil, Clastres, Childe, Braudel, Serres, Virilio, Marx), with what each gave the plateaus.
 
 ## PDFs
 
@@ -23,7 +23,7 @@
 - [The State's three forms in A Thousand Plateaus (PDF)](https://minor-science.github.io/nomadology-reference/state_forms_handout.pdf)
 - [Nomadology's concepts, and how they have moved (PDF)](https://minor-science.github.io/nomadology-reference/concordance_handout.pdf)
 - [After 1980: what the record does to nomadology's claims (PDF)](https://minor-science.github.io/nomadology-reference/after1980_handout.pdf)
-- [The plateaus' library: works cited in the Treatise on Nomadology and Apparatus of Capture (PDF)](https://minor-science.github.io/nomadology-reference/library_handout.pdf)
+- [Nomadology bibliography: works cited in the Treatise on Nomadology and Apparatus of Capture (PDF)](https://minor-science.github.io/nomadology-reference/library_handout.pdf)
 
 ## Related
 

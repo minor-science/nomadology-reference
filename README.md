@@ -7,7 +7,7 @@ Each sheet is a printable PDF (the `*_handout.pdf` files) with a web version of 
 | Sheet | PDF | Web |
 |---|---|---|
 | Plateaus 12–13 beat sheet | `plateaus_beat_sheet.pdf` | `plateaus_beat_sheet.html`, `plateaus_reference.html` |
-| The plateaus' library | `library_handout.pdf` | `library_handout.html`, `library.html` |
+| Nomadology bibliography | `library_handout.pdf` | `library_handout.html`, `library.html` |
 | Five machinic processes | `five_processes_handout.pdf` | `five_processes_handout.html`, `five_processes.html`, `five_processes_marronage.html` (with Protevi's marronage column) |
 | Two sciences | `sciences_handout.pdf` | `two_sciences.html`, `sciences_handout.html` |
 | Concepts, and how they have moved | `concordance_handout.pdf` | `concordance.html`, `concordance_handout.html` |
