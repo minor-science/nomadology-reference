@@ -4,7 +4,7 @@ Deleuze and Guattari distinguish "three major forms" of the State (459). In fact
 
 In the present, as D&G see it, "capitalism and present-day politics are an axiomatic in the literal sense," which is why "nothing is played out in advance" (461). They set out "a summary sketch of the 'givens'" in seven parts. The last column records where, by their own account, struggle enters.
 
-Deleuze and Guattari built nomadology out of other people's research: myth, anthropology, archaeology, history, mathematics, military theory, and political economy, with literature throughout. Their notes to the two plateaus (ATP 552-71) cite about a hundred works, grouped here by field, each with what it gave the plateaus. Sources marked <b class="ag">against are ones they dispute or correct, which is part of the method too. Yet every field here has moved in the fifty years since.
+Deleuze and Guattari built nomadology out of other people's research: myth, anthropology, archaeology, history, mathematics, military theory, and political economy, with literature throughout. Their notes to the two plateaus (ATP 552-71) cite about a hundred works, grouped here by field, each with what it contributed to the plateaus. Sources marked <b class="ag">against are ones they dispute or correct, which is part of the method too. Yet every field here has moved in the fifty years since.
 
 "Capitalism has reawakened the Urstaat, and given it new strength." The modern States "restore the most absolute of empires, a new 'megamachine,' whatever the novelty or timeliness of its now immanent form" (460)
 

@@ -294,7 +294,7 @@ def givens_table():
 
 
 # ---------------------------------------------------------------- 3. Nomadology bibliography
-# (field, [(source, what it gave, ATP pages, against?)]); "against" marks a source Deleuze and Guattari dispute or correct.
+# (field, [(source, what it contributed, ATP pages, against?)]); "against" marks a source Deleuze and Guattari dispute or correct.
 LIBRARY = [
     ("Myth, religion, and ancient thought", [
         ("Dumézil, <i>Mitra-Varuna</i> (1948), <i>The Destiny of the Warrior</i>, <i>Mythe et épopée</i>", "The two heads of sovereignty (the binder and the jurist), the warrior's three sins, the nexum", "351-55, 424-26", False),
@@ -397,7 +397,7 @@ LIBRARY = [
     ]),
 ]
 L_INTRO = ('Deleuze and Guattari built nomadology out of other people\'s research: myth, anthropology, archaeology, history, mathematics, military theory, and political economy, with literature throughout. '
-           'Their notes to the two plateaus (ATP 552-71) cite about a hundred works, grouped here by field, each with what it gave the plateaus. '
+           'Their notes to the two plateaus (ATP 552-71) cite about a hundred works, grouped here by field, each with what it contributed to the plateaus. '
            'Sources marked <b class="ag">against</b> are ones they dispute or correct, which is part of the method too. Yet every field here has moved in the fifty years since.')
 L_FOOT = 'Pages are those of the text where a source enters, with the notes to those pages, in the Minnesota translation of <i>A Thousand Plateaus</i> (1987). Titles and dates as given in the notes.'
 
