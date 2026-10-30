@@ -1,0 +1,151 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Nomadology's Concepts</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans+Condensed:wght@500;600&display=swap"><style>
+:root { --bg:#F5F6F3; --surface:#FFFFFF; --fg:#1D2224; --muted:#5B6468; --rule:#D5D9D6; --pair:#1F6B66; --pair-soft:#E3EFED;
+  --ext:#7A4E7E; --ext-soft:#F3ECF4; --mar:#8A5A1F; --mar-soft:#F6EEE2; --split:#EEF1EF;
+  --serif:"Source Serif 4", Georgia, "Times New Roman", serif; --label:"IBM Plex Sans Condensed", "Arial Narrow", Arial, sans-serif; }
+
+table { border-collapse: collapse; width: 100%; table-layout: fixed; }
+th, td { text-align: left; vertical-align: top; }
+thead th { font-family: var(--label); font-weight: 600; letter-spacing: 0.02em; background: var(--surface); position: relative; z-index: 2; box-shadow: inset 0 -2px 0 var(--fg); }
+thead th small { display: block; font-weight: 500; color: var(--muted); letter-spacing: 0.05em; text-transform: uppercase; }
+thead th.m { background: var(--mar-soft); color: var(--mar); box-shadow: inset 0 -2px 0 var(--mar); }
+.tag { display: inline-block; font-family: var(--label); font-weight: 500; color: var(--mar); border: 1px solid var(--mar); text-transform: uppercase; letter-spacing: 0.04em; }
+tbody th { font-family: var(--label); font-weight: 600; color: var(--muted); }
+tr.row > * { border-top: 1px solid var(--rule); }
+col.mc, td.m { background: var(--mar-soft); }
+td b { font-weight: 600; }
+.pg { color: var(--muted); font-size: 0.88em; }
+td.ext { background: var(--ext-soft); outline: 1.2px dashed var(--ext); font-style: italic; }
+td.none { color: var(--rule); }
+.essay { display: block; font-style: italic; background: var(--ext-soft); outline: 1px dashed var(--ext); }
+.essay::before { content: "Proposed: "; font-style: normal; color: var(--ext); }
+.rec { display: block; font-style: italic; color: var(--fg); background: var(--ext-soft); outline: 1px dashed var(--ext); }
+.rec::before { content: "Record "; font-style: normal; color: var(--ext); }
+.rid { font-family: var(--label); font-style: normal; color: var(--ext); }
+dl.key { margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 8px 22px; }
+dl.key dt { font-family: var(--label); font-weight: 600; }
+dl.key dd { margin: 0; color: var(--muted); }
+.split { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--rule); background: var(--split); }
+.split > div { min-width: 0; }
+.split > div + div { border-left: 1px solid var(--rule); }
+.mut { color: var(--muted); font-style: italic; }
+.seg { display: flex; }
+.seg i { flex: 1; border-top: 2px solid var(--pair); }
+.seg i.l { border-left: 2px solid var(--pair); }
+.seg i.r { border-right: 2px solid var(--pair); }
+.seg i.skip { border-top: 2px dotted var(--pair); opacity: 0.55; }
+.seg.ext i { border-color: var(--ext); border-top-style: dashed; }
+.seg.mk i { border-color: var(--mar); }
+p.bt { color: var(--pair); }
+p.bt.ext { color: var(--ext); }
+p.bt.mk { color: var(--mar); }
+tr.transfer > * { border-top: 2px solid var(--fg); background: var(--pair-soft); }
+.tm { display: block; color: var(--mar); }
+
+@page { size: letter landscape; margin: 0.2in; }
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact; box-sizing: border-box; }
+html, body { margin: 0; background: #fff; color: var(--fg); font-family: var(--serif); }
+.sheet { width: 10.6in; height: 8.1in; display: flex; flex-direction: column; gap: 0.05in; break-after: page; page-break-after: always; overflow: hidden; }
+.sheet:last-child { break-after: auto; page-break-after: auto; }
+.top { display: flex; justify-content: space-between; align-items: baseline; gap: 0.2in; }
+h1 { margin: 0; font-weight: 600; }
+.side { font-family: var(--label); font-size: 6.4pt; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; white-space: nowrap; }
+.intro { margin: 0; color: var(--muted); line-height: 1.28; }
+.intro b { color: var(--fg); }
+.intro.m { color: var(--fg); border-left: 2pt solid var(--mar); padding-left: 6pt; }
+.legend { display: flex; flex-wrap: wrap; gap: 3pt 12pt; font-family: var(--label); font-size: 6pt; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 4pt; }
+.sw { display: inline-block; }
+.sw-p { width: 16pt; height: 5pt; border: 1.2pt solid var(--pair); border-bottom: 0; }
+.sw-m { width: 16pt; height: 5pt; border: 1.2pt solid var(--mar); border-bottom: 0; }
+.sw-e { width: 11pt; height: 8pt; border: 1pt dashed var(--ext); background: var(--ext-soft); }
+.sw-s { width: 16pt; height: 8pt; border: 0.6pt solid var(--rule); background: linear-gradient(90deg, var(--split) 0 47%, var(--rule) 47% 53%, var(--split) 53%); }
+table { border: 0.6pt solid var(--rule); }
+thead th { box-shadow: inset 0 -1.2pt 0 var(--fg); }
+thead th.m { box-shadow: inset 0 -1.2pt 0 var(--mar); }
+tr.row > * { border-top-width: 0.5pt; }
+td.ext { outline-width: 0.8pt; outline-offset: -2.5pt; }
+.essay, .rec { outline-width: 0.8pt; outline-offset: -1pt; }
+.s1 .rec { margin-top: 1.5pt; padding: 0.6pt 2.6pt; }
+.split { border-width: 0.5pt; }
+.split > div + div { border-left-width: 0.5pt; }
+.seg i, .seg i.l, .seg i.r { border-width: 1.1pt; }
+.seg i.skip { border-top-width: 1.2pt; }
+tr.transfer > * { border-top-width: 1pt; }
+.foot { font-size: 5.3pt; color: var(--muted); margin-top: auto; }
+.rmark { font-family: var(--label); font-size: 0.8em; font-weight: 600; color: var(--ext); border: 0.6pt dashed var(--ext); background: var(--ext-soft); padding: 0 1.5pt; margin-left: 2pt; vertical-align: 0.3em; line-height: 1; }
+.s3 { gap: 0.08in; height: auto; overflow: visible; }
+.s3 dl.key div { break-inside: avoid; }
+.s3 h1 { font-size: 13pt; } .s3 .intro { font-size: 7.2pt; max-width: 9in; }
+.s3 h2 { font-family: var(--label); font-size: 9pt; margin: 0.06in 0 0; }
+.rnotes { list-style: none; margin: 0; padding: 5pt 7pt; columns: 2; column-gap: 16pt; font-size: 6.5pt; line-height: 1.2; background: var(--ext-soft); outline: 0.8pt dashed var(--ext); outline-offset: -1pt; }
+.rnotes li { break-inside: avoid; margin-bottom: 3pt; }
+.rnotes li b { color: var(--ext); font-family: var(--label); margin-right: 3pt; }
+.rwhere { font-family: var(--label); font-size: 0.9em; color: var(--muted); margin-right: 3pt; }
+.s3 dl.key { display: block; columns: 5; column-gap: 11pt; font-size: 5.65pt; line-height: 1.16; }
+.s3 dl.key div { break-inside: avoid; margin-bottom: 3pt; }
+.s3 dl.key dt { font-size: 6.4pt; }
+.s1 h1 { font-size: 13pt; } .s1 .intro { font-size: 6.3pt; }
+.s1 table { font-size: 5.4pt; line-height: 1.08; }
+.s1 col.q { width: 0.92in; }
+.s1 th, .s1 td { padding: 1.6pt 3.4pt; }
+.s1 thead th { font-size: 7.8pt; } .s1 thead th small { font-size: 5.4pt; }
+.s1 tbody th { font-size: 6.3pt; }
+.s1 .split > div { padding: 1.2pt 2.6pt; } .s1 .mut { margin-top: 1.5pt; }
+.s1 tr.band td { padding: 0 3.6pt 1.2pt; } .s1 .seg { height: 3pt; margin: 0 2pt; } .s1 p.bt { font-size: 5.6pt; margin: 0.5pt 2pt 0; line-height: 1.12; }
+.s1 tr.transfer > * { padding: 3pt 4pt; }
+.s2 h1 { font-size: 12.5pt; } .s2 .intro { font-size: 6.7pt; }
+.s2 table { font-size: 5.45pt; line-height: 1.1; }
+.s2 col.q { width: 0.8in; }
+.s2 th, .s2 td { padding: 1.8pt 3pt; }
+.s2 thead th { font-size: 6.9pt; } .s2 thead th small { font-size: 4.9pt; }
+.s2 .tag { font-size: 4.6pt; padding: 0 2.5pt; margin-top: 1pt; }
+.s2 tbody th { font-size: 5.6pt; }
+.s2 .split > div { padding: 1pt 2.4pt; } .s2 .mut { margin-top: 1pt; }
+.s2 .essay, .s2 .rec { margin-top: 1pt; padding: 0.4pt 2.4pt; }
+.s2 tr.band td { padding: 0 2.6pt 0.8pt; } .s2 .seg { height: 2.5pt; margin: 0 1.5pt; } .s2 p.bt { font-size: 5.1pt; margin: 0.3pt 1.5pt 0; line-height: 1.1; }
+.s2 tr.transfer > * { padding: 2pt 2.8pt; } .s2 .tm { margin-top: 0.6pt; }
+
+table.cc tbody th small, table.sf thead th small { display: block; }
+table.cc tbody th small { font-weight: 500; color: var(--muted); }
+td.wk { background: var(--pair-soft); }
+td.dr { background: var(--ext-soft); font-style: italic; }
+table.gv td.st { background: var(--pair-soft); }
+table.gv td.pp { font-family: var(--label); color: var(--muted); }
+.poles3 { display: grid; grid-template-columns: auto 1fr 1fr 1fr; border: 1px solid var(--rule); background: var(--split); }
+.poles3 > * { padding: 4px 8px; }
+.poles3 > * + * { border-left: 1px solid var(--rule); }
+.plab { font-family: var(--label); font-weight: 600; color: var(--muted); }
+.lib { columns: 3; column-gap: 22px; }
+.fld { break-inside: avoid-column; margin-bottom: 10px; }
+.fld h2 { font-family: var(--label); font-weight: 600; margin: 0 0 3px; color: var(--pair); border-bottom: 1px solid var(--pair); }
+.fld h2 small { color: var(--muted); font-weight: 500; }
+.fld ul { list-style: none; margin: 0; padding: 0; }
+.fld li { margin-bottom: 3px; }
+.src { font-weight: 600; }
+table.ws { width: 100%; border-collapse: collapse; margin-bottom: 8px; }
+table.ws th, table.ws td { border: 1px solid var(--rule); padding: 3px 6px; text-align: left; vertical-align: top; }
+table.ws thead th { font-family: var(--label); background: var(--surface); }
+table.ws td.pp { font-family: var(--label); color: var(--muted); white-space: nowrap; }
+b.ag, .ag { font-family: var(--label); font-weight: 600; color: var(--ext); border: 1px dashed var(--ext); background: var(--ext-soft); padding: 0 3px; text-transform: uppercase; font-size: 0.8em; letter-spacing: 0.03em; }
+
+.cc1 h1, .sf1 h1, .gv1 h1, .lb1 h1 { font-size: 13pt; }
+.cc1 .intro, .sf1 .intro, .gv1 .intro, .lb1 .intro { font-size: 7pt; }
+.cc1 table { font-size: 6.75pt; line-height: 1.16; }
+.cc1 col.c1 { width: 1.05in; } .cc1 col.c2 { width: 1.95in; } .cc1 col.c3 { width: 2.3in; } .cc1 col.c4 { width: 2.65in; }
+.cc1 th, .cc1 td { padding: 2.6pt 3.6pt; }
+.cc1 thead th { font-size: 8pt; } .cc1 tbody th { font-size: 7pt; } .cc1 tbody th small { font-size: 5.8pt; }
+.sf1 table { font-size: 6.9pt; line-height: 1.14; }
+.sf1 col.q { width: 1.15in; }
+.sf1 th, .sf1 td { padding: 2.2pt 4pt; }
+.sf1 thead th { font-size: 8.4pt; } .sf1 thead th small { font-size: 5.8pt; } .sf1 tbody th { font-size: 6.8pt; }
+.sf1 tr.band td { padding: 0 4pt 1.5pt; } .sf1 .seg { height: 3pt; margin: 0 2pt; } .sf1 p.bt { font-size: 6.2pt; margin: 0.6pt 2pt 0; line-height: 1.12; }
+.sf1 tr.transfer > * { padding: 3pt 4pt; }
+.gv1 table { font-size: 8pt; line-height: 1.2; }
+.gv1 col.g1 { width: 1.5in; } .gv1 col.g2 { width: 0.6in; } .gv1 col.g3 { width: 4.7in; }
+.gv1 th, .gv1 td { padding: 4pt 5pt; } .gv1 thead th { font-size: 8.6pt; } .gv1 tbody th { font-size: 7.8pt; }
+.gv1 .poles3 { font-size: 7.6pt; line-height: 1.2; margin-top: 0.08in; border-width: 0.6pt; } .gv1 .poles3 > * { padding: 3pt 5pt; }
+.lb1 .lib { font-size: 6.1pt; line-height: 1.15; column-gap: 12pt; }
+.lb1 .fld h2 { font-size: 7.6pt; border-bottom-width: 0.6pt; } .lb1 .fld { margin-bottom: 4pt; } .lb1 .fld li { margin-bottom: 1.6pt; }
+.lb1 b.ag, .lb1 .ag { border-width: 0.6pt; padding: 0 1.5pt; }
+.lb1 table.ws { font-size: 7.8pt; line-height: 1.15; table-layout: fixed; } .lb1 col.w1 { width: 0.5in; } .lb1 col.w2 { width: 0.8in; } .lb1 col.w3 { width: 6.2in; } .lb1 col.w4 { width: 1.6in; } .lb1 table.ws th, .lb1 table.ws td { padding: 1.8pt 4pt; } .lb1 .ws2 { font-size: 7.6pt; columns: 3; margin-top: 8pt; }
+</style></head><body><section class="sheet cc1"><div class="top"><h1>Nomadology's concepts, and how they have moved</h1><span class="side">Concordance &#183; front</span></div><p class="intro">A concept, as Deleuze often put it, is the movement behind its name. Indeed, these names have moved a great deal. Each row gives a concept of the two plateaus in plain words, the field from which it came, where it was worked out before 1980 (CERFI's journal <i>Recherches</i> in 1972-73, Deleuze's seminars at Vincennes in 1979-80), and how it has been taken up since. R13 is <i>Recherches</i> 13 (December 1973), cited by its printed pages.</p><table class="cc"><colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c4"><col class="c5"></colgroup><thead><tr><th>Concept</th><th>In plain words</th><th>Where it came from</th><th>Where it was worked out</th><th>How it has been taken up since</th></tr></thead><tbody><tr class="row"><th>The five machinic processes<small>435, 437</small></th><td>Five coexisting processes (warding off, the war machine, capture, polarization, encompassment) that define social formations in place of modes of production</td><td>Two libraries: historians and urbanists (Braudel, Childe, Wittfogel, Mumford, Amin, Jacobs) for town, State, and ecumenical, and anthropologists (Clastres, L&#233;vi-Strauss, Dum&#233;zil) for warding off, capture, and war machine</td><td class="wk">Guattari in 1973 on a Neolithic organization that survives "in Oriental despotism ... even in capitalism" <span class="pg">R13 129</span>. Deleuze in 1979: projecting one form onto another without precaution is "a catastrophe" <span class="pg">seminar, 20 Nov 1979</span></td><td class="dr">Taken for a typology of societies, or flattened into capture against escape, which drops the town and the ecumenical (Protevi's table has neither, RoV xx-xxi)</td></tr><tr class="row"><th>Warding off (anticipation-prevention)<small>357-59, 429-33, 437-40</small></th><td>The ways in which a society anticipates a power it has never seen, so as to prevent it</td><td>Clastres's chief without command (<i>Society against the State</i>), L&#233;vi-Strauss's two village plans (<i>Structural Anthropology</i> 149-51), and Mauss on the destruction of wealth</td><td class="wk">Deleuze names Mauss as the source that Clastres "took up and renewed" <span class="pg">seminar, 20 Nov 1979</span>. Guattari on the potlatch: "above all no reciprocity, even when there is reciprocity" <span class="pg">R13 142</span></td><td class="dr">An evolved disposition (Boehm's reverse dominance hierarchy, RoV 98), a damping mechanism (Protevi's "thick threshold"), or a costless equality</td></tr><tr class="row"><th>Limit and threshold<small>437-41</small></th><td>The limit is the next-to-last, marking a fresh start for an assemblage. The threshold is the last, marking a change of assemblage</td><td>Jevons's "final degree of utility" (1871) and the marginalists Pirou and Pareto <span class="pg">566-67 nn. 24-26</span></td><td class="wk">Deleuze: "The marginal object is the penultimate or the limit" <span class="pg">seminar, 27 Nov 1979</span></td><td class="dr">Lost. Bonta and Protevi's glossary keeps the distinction but not its marginalist content</td></tr><tr class="row"><th>Apparatus of capture<small>424-27, 444, 459-60</small></th><td>Direct comparison and monopolistic appropriation together, as in rent, profit, and tax</td><td>Dum&#233;zil's two-headed sovereignty (Varuna the binder, Mitra the jurist) in <i>Mitra-Varuna</i> (1948), together with the Roman debt bond called the nexum</td><td class="wk">Deleuze: "magic" was "a convenient and temporary word ... there is a war capture, but it is not at all the same as a State capture" <span class="pg">seminar, 22 Jan 1980</span>. Fourquet in 1972: "the first form of writing is accounting" <span class="pg">R13 28</span></td><td class="dr">Co-optation ("the system captures resistance"), or simply everything a State does</td></tr><tr class="row"><th>Urstaat<small>359, 427, 460</small></th><td>The State presupposed by every account of its origin, which "comes into the world fully formed"</td><td>Marx's Asiatic mode (<i>Grundrisse</i>), Wittfogel, Childe, and Nietzsche's founders who come "like lightning" (<i>Genealogy</i> II.17)</td><td class="wk">Against it, in 1973: "we will have learned nothing from knowing that this State was already in germ in Sumer or in Egypt" <span class="pg">R13 116</span></td><td class="dr">Taken for a historical despotism, or for an origin</td></tr><tr class="row"><th>Polarization (the town)<small>432-35</small></th><td>The town as a point on circuits of roads, a power "of the middle" that coordinates by force</td><td>Fourquet and Murard's 1976 <i>Les &#233;quipements du pouvoir</i> ("The Facilities of Power"), along with Braudel's "two runners, the state and the town" and L&#233;vi-Strauss's village plans</td><td class="wk">Towns "always emerge as a network" before any territorial State, as with the Hanse <span class="pg">R13 70-71, 89-92</span>. Deleuze: "a bureaucracy of networks" <span class="pg">seminar, 20 Nov 1979</span></td><td class="dr">Almost absent from the reception, and near zero in Protevi</td></tr><tr class="row"><th>Encompassment (the ecumenical)<small>435-36, 454</small></th><td>Organizations that pass through heterogeneous formations at once (trade, religions, art)</td><td>Samir Amin's <i>Unequal Development</i> (146, 295), Braudel's world-economy, and Lacarri&#232;re on the desert fathers</td><td class="wk">Islam as "an immense network," whose first public facilities were "language, money ... and religion" <span class="pg">R13 77-79</span></td><td class="dr">Almost absent, with world-systems theory taken up in its place</td></tr><tr class="row"><th>Code, overcoding, axiomatic<small>427, 448-54, 461-62</small></th><td>A code relates qualified elements within a domain, overcoding subordinates codes to a higher unity, and an axiomatic treats unqualified flows directly</td><td>L&#233;vi-Strauss's codes of exchange, the genetic code (Jacob and Monod), Hjelmslev, and set theory</td><td class="wk">Guattari in 1973: "public facilities are the axioms of capital ... no intrinsic coding" <span class="pg">R13 131</span></td><td class="dr">Code heard as computer code, though most of what now goes by that name is axiomatic</td></tr><tr class="row"><th>Adding axioms<small>462-63, 470</small></th><td>Capitalism's answer to whatever escapes it, which is to add an axiom for it</td><td>Set theory and Marxist accounts of co-optation</td><td class="wk">Guattari in 1973: capital is "obliged to enlarge its own axiomatic without stopping" and "the first axiom of capital is recuperation" <span class="pg">R13 133, 140</span></td><td class="dr">Folded into capture as co-optation, with recuperation as fate, though ATP calls recuperation a "disenchanted concept" (463)</td></tr><tr class="row"><th>The stock<small>440-44</small></th><td>What begins when exchange stops being of interest, with land, tools, and money as stockpiled territory, activity, and exchange</td><td>Ingold on social storage (1983), Testart (1982), and Jacobs and Mellaart on &#199;atal H&#252;y&#252;k</td><td class="wk">The State as "a social machine ... for putting flows in reserve" <span class="pg">R13 72</span></td><td class="dr">Storage as a threshold toward the State (Sterelny, in RoV 98)</td></tr><tr class="row"><th>Nomad and nomos<small>380-85, 422</small></th><td>The nomad occupies a space without dividing it. The nomos is a distribution "without division into shares"</td><td>Toynbee's nomads who "stood their ground," Laroche on the root <i>nem-</i> <span class="pg">557 n. 51</span> against Schmitt's nomos as land seizure, and Ibn Khaldun</td><td class="wk">Deleuze: there are "nomades sur place" ("nomads on the spot") <span class="pg">seminar, 25 Mar 1980</span></td><td class="dr">A people of the steppe, mobility, flight, the digital nomad, Braidotti's nomadic subject</td></tr><tr class="row"><th>Smooth and striated<small>362, 474-500</small></th><td>Space occupied without being counted, against space counted in order to be occupied</td><td>Boulez's smooth and pulsed time (<i>Penser la musique aujourd'hui</i>, 1963)</td><td class="wk">Deleuze in 1973: "The highway today is channeled nomadism ... while public service implies a general nomadism" <span class="pg">R13 186</span>. In 1980, no space is "better than the other" <span class="pg">seminar, 25 Mar 1980</span></td><td class="dr">Smooth taken as good or free, as nature or complexity, or as an architectural look. For Protevi, "too abstract" for marronage (RoV 120)</td></tr></tbody></table><div class="foot">ATP page numbers refer to the Minnesota translation of <i>A Thousand Plateaus</i> (1987), RoV to Protevi's <i>Regimes of Violence</i> (2025). Seminar dates refer to the Purdue transcripts of Deleuze's lectures. Translations from the French are the project's own. Source: <i>kit/concept_ledger.tsv</i>.</div></section><section class="sheet cc1"><div class="top"><h1>Nomadology's concepts, continued</h1><span class="side">Concordance &#183; back</span></div><p class="intro">Concepts 13-24, from nomad and nomos to the right of use.</p><table class="cc"><colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c4"><col class="c5"></colgroup><thead><tr><th>Concept</th><th>In plain words</th><th>Where it came from</th><th>Where it was worked out</th><th>How it has been taken up since</th></tr></thead><tbody><tr class="row"><th>Holey space<small>413-15</small></th><td>Space bored through mountain and subsoil by the smith, communicating with both smooth and striated space</td><td>&#201;lie Faure on the rock-cut temples of India, Eisenstein's <i>Strike</i>, and Childe and Griaule on smiths</td><td class="wk">The vacant lot, or terrain vague ("waste ground"), as a modern holey remainder <span class="pg">R13 173-74</span></td><td class="dr">Ignored, Protevi included</td></tr><tr class="row"><th>Line of flight (the leak)<small>204, 216, 229</small></th><td>From the French fuite, which is also a leak: to put a system to flight is to make it leak</td><td>French fuite ("leak," "flight") and painting's point de fuite ("vanishing point"), Anglo-American literature, George Jackson</td><td class="wk">"To put a system to flight as one bursts a tube" <span class="pg"><i>Dialogues</i> 36</span>. In 1973: "it leaks on all sides" <span class="pg">R13 118-19</span></td><td class="dr">Flight as leaving, exodus, or refuge (Protevi's "autonomy-seeking flight / refuge")</td></tr><tr class="row"><th>War machine<small>351-423</small></th><td>A process whose positive object is to compose a smooth space and its people, with war only as its supplement</td><td>Dum&#233;zil on the warrior's exteriority, Clausewitz, Ibn Khaldun, Clastres, de Heusch, Brossollet, Virilio, Kleist</td><td class="wk">Guattari in 1972: "The ideal of despotism is Genghis Khan: destroy everything (except the artisans)" <span class="pg">R13 29</span>, and in 1973 "nomadic State power" <span class="pg">R13 135</span></td><td class="dr">Militarism, "the nomads" (Sneath, Munkh-Erdene), creativity in general, or any subversive collective</td></tr><tr class="row"><th>Numbering number<small>387-94</small></th><td>A number that distributes people in space and moves with them, articulated and doubled by a special body</td><td>Kristeva's <i>Semeiotike</i> (293-97), Aristotle's counting number (<i>Physics</i> IV.11), the muster of Numbers 1, and Jethro's judges in Exodus 18</td><td class="wk">Deleuze on Boulez: "cipher, numbering number, nomad or Mallarmean number"</td><td class="dr">Little used, and taken by the specialists for sovereignty</td></tr><tr class="row"><th>Esprit de corps<small>366</small></th><td>A solidarity that makes the family "a band vector instead of a fundamental cell"</td><td>Ibn Khaldun's asabiyya (<i>The Muqaddimah</i>)</td><td class="wk">&#183;</td><td class="dr">Team spirit (Protevi's chapter on team sports, RoV 73-88)</td></tr><tr class="row"><th>The secret, the cipher<small>390, 286-90</small></th><td>The cipher "invents the secret and its outgrowths," against the public knowledge of the State</td><td>Simmel on secret societies, de Heusch's man of war, and for today the anthropology of restricted knowledge (Price, Bilby, Peterson, Myers)</td><td class="wk">Deleuze in 1972: codes work by "zones of secrecy," an axiomatic by "objective concealment" <span class="pg">seminar, 7 Mar 1972</span></td><td class="dr">Knowledge treated as one more stock for capture</td></tr><tr class="row"><th>Nomad and royal science<small>361-74, 461</small></th><td>Two conceptions of science in one field, the one following a material and the other reproducing a form</td><td>Serres on Lucretius, Husserl's vague essences (<i>Ideas</i> I &#167;74), Bachelard, Simondon, Vergez on the compagnonnages, Lautman</td><td class="wk">Querrien's <i>Devenir fonctionnaire</i> (1977). Guattari in 1973: "Bourbaki is a capitalist theorist" <span class="pg">R13 145</span></td><td class="dr">Unused by Protevi, and otherwise taken as complexity theory (Bonta and Protevi) or as Indigenous or alternative knowledge</td></tr><tr class="row"><th>Minority, the nondenumerable<small>469-71</small></th><td>A set defined by the relations internal to its number, which no axiom can count</td><td>Cantor's set theory and Yann Moulier-Boutang</td><td class="wk">Guattari in 1973: "a special axiom ... for the Katangans, as long as it does not leak anywhere" <span class="pg">R13 138</span></td><td class="dr">Minor as small or marginal</td></tr><tr class="row"><th>Machinic enslavement and social subjection<small>456-60</small></th><td>People as parts of a machine, against people as subjects who use a machine</td><td>Mumford's megamachine, Reuleaux, Marx on constant and variable capital, and cybernetics</td><td class="wk">The city as "the social cybernetic machine of industrial capitalism" (1971) <span class="pg">R13 20 n. 1</span></td><td class="dr">Taken up for digital capitalism (Lazzarato), rarely for slavery</td></tr><tr class="row"><th>Machinic phylum<small>404-15</small></th><td>Matter in movement and variation, carrying singularities and traits of expression, which can only be followed</td><td>Simondon, Childe on metallurgy, and Hjelmslev</td><td class="wk">Guattari in 1973: the phylum as "the most deterritorialized point" <span class="pg">R13 131</span></td><td class="dr">&#183;</td></tr><tr class="row"><th>Public facilities<small>behind 454, 461-62</small></th><td>Schools, hospitals, roads, and other such facilities, which Guattari called "the axioms of capital" (not an ATP term)</td><td>French postwar planning, where &#233;quipements collectifs ("public facilities") enters the Fourth Plan in 1962</td><td class="wk">Facilities as "instruments of domination and territorial fixing of flows" <span class="pg">R13 127</span></td><td class="dr">Translated "collective equipment," and confused with infrastructure</td></tr><tr class="row"><th>Channeled nomadism, the right of use<small>not in ATP, cf. 386</small></th><td>The highway channels nomadism, while public service implies a general nomadism, so that "the right of use is the community"</td><td>French public service law, with its usager ("user") and droit d'usage ("right of use")</td><td class="wk">Deleuze in the CERFI discussion of public facilities <span class="pg">R13 186</span></td><td class="dr">Unknown to the reception</td></tr></tbody></table><div class="foot">ATP page numbers refer to the Minnesota translation of <i>A Thousand Plateaus</i> (1987), RoV to Protevi's <i>Regimes of Violence</i> (2025). Seminar dates refer to the Purdue transcripts of Deleuze's lectures. Translations from the French are the project's own. Source: <i>kit/concept_ledger.tsv</i>.</div></section></body></html>

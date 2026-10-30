@@ -4,7 +4,7 @@
   grid_handout.html             two-page letter handout (render to PDF with headless Chrome)
 Column order follows ATP's Axiom I (outside to inside to across): warding off, war machine,
 (marronage), capture, polarization, encompassment."""
-import html, os
+import html, os, re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 COLS5 = ["wo", "wm", "state", "town", "ecu"]
@@ -30,7 +30,7 @@ ROWS = [
         "wm": ("SPLIT", ["**Creative**: “a creative line of flight” (guerrilla, popular war)",
                          "**Destructive**: war as its object (total war, fascism) [[422-23, cf. Clausewitz, 420]]"],
                "Captured by “encastment” (Rome’s federated barbarians) or “appropriation proper” (a citizen army) as an army [[419, 425]], or a “worldwide war machine” of “military-industrial” complexes [[387, cf. Virilio]]"),
-        "mar": ("SPLIT", ["**Wild**: outside, yet close enough for trading and raiding (e.g., Jamaica’s mountains)",
+        "mar": ("SPLIT", ["**Wild**: outside the plantation but near enough to trade and raid (e.g., Jamaica’s mountains)",
                           "**Urban**: “hiding in plain sight” (forged papers in a city) [[RoV 109]]"],
                 "State-establishing maroons or Haiti’s counter-plantation [[RoV 104]], as “tendencies,” not types [[RoV 109]]",
                 "Three operations: putting the plantation to flight in place, leaving it, and occupying a space without leaving"),
@@ -93,7 +93,7 @@ ROWS = [
     ("How is knowledge made?", {
         "wo": "Territorial codes (kin rules, ritual)",
         "wm": "**Nomad science**: problematic and following (Gothic builders, smiths, navigators), with the cipher and the secret [[361-74, 390]]",
-        "mar": ("Marronage as a “figure” in Glissant and other Caribbean writers [[RoV 121]]", "Knowledge kept by restriction, as in Saramaka history told in fragments (Price) or Jamaican “Maroon Science” (Bilby)"),
+        "mar": ("Marronage as a “figure” in Glissant and other Caribbean writers [[RoV 121]]", "Knowledge kept by restriction, as in Saramaka history told in fragments (Richard Price) or Jamaican “Maroon Science” (Bilby)"),
         "state": "**Royal science**: theorematic and reproducing (Euclid, State engineering), with the State form of thought [[361-76]]",
         "town": "Frequency, “melodic lines” [[434]]",
         "ecu": "Translation, religions, art (scripture carried across languages) [[430, 436]]",
@@ -135,7 +135,7 @@ ROWS = [
 # Findings from the specialist record that complicate or dispute a cell (shown as "Record:" notes).
 NOTES = {
     ("What are its poles and forms?", "wo"): 'Ethnography complicates warding off, since among the Pintupi of Australia’s Western Desert, control of ritual knowledge founds rank as “looking after” (Myers), while in Tonga the communities that resisted their chiefs’ extraction came to stress women’s reproductive roles, which lowered women’s standing (Gailey).',
-    ("What are its poles and forms?", "wm"): 'Historians of the Mongol steppe disagree over whether a war machine can found a State. For Munkh-Erdene the warband of a charismatic warlord is the “nomadic origin of the state,” whereas for Di Cosmo steppe states formed “in relation to sedentary states” such as China, which leaves the question open.',
+    ("What are its poles and forms?", "wm"): 'Can a war machine found a State? Historians of the Mongol steppe disagree. For Munkh-Erdene the warband of a charismatic warlord is the “nomadic origin of the state,” whereas for Di Cosmo steppe states formed “in relation to sedentary states” such as China, which leaves the question open.',
     ("How is space occupied?", "wm"): 'Anthropologists of Inner Asia have dropped “nomadism” in favor of “mobile pastoralism” (Humphrey and Sneath), much as ancient DNA studies measure migration. Yet for Deleuze and Guattari it is “false to define the nomad by movement” (381), so the specialists and the plateaus are not arguing about the same thing.',
     ("How is power exercised?", "town"): 'Archaeology reopens the question of which threshold comes first. Sumer’s city-states are ATP’s own “town solution” (432), the Indus cities had writing and standard weights but no palaces (Green), and every place name recorded in Uruk-period Mesopotamia is the name of a city (Moreno García and Richardson).',
     ("How is exchange made?", "state"): 'Studies of hunter-gatherers suggest that setting food aside does not yet make a stock, which requires rights converging “upon a single interest” (Ingold). Indeed, Testart calls the order of storage and settled life “chicken-and-egg.” Both tell against the storage-first account Protevi takes up (RoV 98).',
@@ -150,14 +150,14 @@ KEY = [
     ('Amin, Samir', 'Deleuze and Guattari side with the economist Samir Amin, a theorist of world-systems and unequal development, in holding that “there can be no economic theory of international relations,” which is the ground of the ecumenical (435-36).'),
     ('Bilby, Kenneth', 'For the anthropologist Kenneth Bilby, in <i>True-Born Maroons</i> (2005), the Jamaican Maroons keep a knowledge they call “Maroon Science,” learned through “testing and evasion.”'),
     ('Boulez, Pierre', 'Smooth and striated space come from the composer Pierre Boulez, who distinguished musical time counted in advance from time occupied without being counted (362, 477-78).'),
-    ('Braudel, Fernand', 'In the historian Fernand Braudel’s account of capitalism, State and town run as “two runners” through European history, an image quoted at ATP 434.'),
+    ('Braudel, Fernand', 'Fernand Braudel describes the State and the town as “two runners” in the history of European capitalism, an image Deleuze and Guattari quote (434).'),
     ('Carney, Judith, and Richard Rosomoff', 'In <i>In the Shadow of Slavery</i> (2009), the geographers Judith Carney and Richard Rosomoff reproduce a 1769 militia map of a runaway settlement in Minas Gerais, Brazil, marking its smithies, gardens, hidden defenses, and “holes for escape” (85).'),
     ('Casimir, Jean', 'The Haitian historian Jean Casimir shows in <i>The Haitians</i> (2020) how cultivators after the revolution built a “counter-plantation” of family farms and, “without moving from the plantations,” stopped being the plantation’s workers (142), a book Protevi also cites (RoV 104).'),
-    ('Childe, V. Gordon', 'Deleuze and Guattari take the itinerant smith, who follows metal, from V. Gordon Childe, the archaeologist of prehistoric Europe and the Near East (412, 415).'),
+    ('Childe, V. Gordon', 'Deleuze and Guattari take the itinerant smith, who follows metal, from V. Gordon Childe, an archaeologist of prehistoric Europe who also dug in the Near East (412, 415).'),
     ('Clastres, Pierre', 'Warding off begins with the anthropologist Pierre Clastres, whose <i>Society against the State</i> (1974) describes Amazonian chiefs who speak but cannot command (357-59).'),
-    ('Clausewitz, Carl von', 'The war machine’s two poles rework the Prussian theorist Carl von Clausewitz’s distinction between absolute war, which is an Idea, and the real wars fought by States (420-23).'),
+    ('Clausewitz, Carl von', 'The war machine’s two poles rework the distinction that the Prussian theorist Carl von Clausewitz draws between absolute war as an Idea and the real wars that States fight (420-23).'),
     ('Di Cosmo, Nicola', 'In <i>Ancient China and Its Enemies</i> (2002), the historian Nicola Di Cosmo has the Xiongnu state form in reaction to China, adopting forms of sedentary states as it did so (171).'),
-    ('Dumézil, Georges', 'Sovereignty’s two heads, Varuna the binder and Mitra the jurist, come from Georges Dumézil’s comparative history of Indo-European religion (351, 424).'),
+    ('Dumézil, Georges', 'Sovereignty’s two heads (Varuna the binder against Mitra the jurist) come from Georges Dumézil’s comparative history of Indo-European religion (351, 424).'),
     ('Gailey, Christine Ward', 'Christine Ward Gailey’s <i>Kinship to Kingship</i> (1987) treats state formation in Tonga as a process, one in which communities resisting the chiefs’ extraction came to stress women’s reproductive roles, so that women’s status fell (xi).'),
     ('Garfinkle, Steven, and Seth Richardson', 'For Middle Bronze Age Mesopotamia (about 2000-1600 BCE), the historians Steven Garfinkle and Seth Richardson find State and community violence “rare in fact,” with sanction running instead through reputation and exclusion (161).'),
     ('Glissant, Édouard', 'The Martinican writer Édouard Glissant, among the Caribbean writers Protevi cites, takes the maroon as a figure of resistance (RoV 121).'),
@@ -167,18 +167,18 @@ KEY = [
     ('Husserl, Edmund', 'Nomad science takes its anexact rigor from Edmund Husserl’s “vague essences,” roundness as opposed to the circle (367).'),
     ('Indus, Sumer, Uruk', 'The Indus civilization flourished in present-day Pakistan and northwest India (about 2600-1900 BCE). Sumer names the city-states of southern Mesopotamia (from about 2900 BCE), while the period of Uruk, a Mesopotamian city (about 4000-3100 BCE), gives the earliest writing, kept as accounts.'),
     ('Ingold, Tim', 'For the anthropologist Tim Ingold, setting food aside is not yet a stock, since a stock is rights converging “upon a single interest” (1983, 553).'),
-    ('Jevons, W. Stanley', 'The limit and threshold of warding off borrow “the last” unit of the marginalist economist W. Stanley Jevons, whom Deleuze and Guattari call “a kind of Lewis Carroll of economics” (437).'),
+    ('Jevons, W. Stanley', 'The limit and threshold of warding off borrow “the last” unit from the marginalist economist Jevons, whom Deleuze and Guattari dub “a kind of Lewis Carroll of economics” (437).'),
     ('Three operations of marronage', 'The sheet proposes three operations of marronage, namely putting a system to flight in place, leaving it, and holding a space without leaving it.'),
     ('Lévi-Strauss, Claude', 'Claude Lévi-Strauss showed that the same village can present itself as segmentary and egalitarian or as encompassing and hierarchized, two potentials that Deleuze and Guattari treat as anticipations of town and State (433).'),
     ('Manzanilla, Linda', 'The archaeologist Linda Manzanilla studies Teotihuacan, a city of central Mexico (about 100 BCE-550 CE) founded largely by people displaced by a volcanic eruption, governed corporately, and burned at its center around 550 CE.'),
-    ('Marx, Karl', 'From Karl Marx come ATP’s archaic State, his “Asiatic formation” (427), the “trinity formula” behind rent, profit, and tax (443), and the primitive accumulation behind State violence (447).'),
+    ('Marx, Karl', 'From Karl Marx come ATP’s archaic State, his “Asiatic formation” (427), the “trinity formula” behind rent and profit as well as tax (443), and the primitive accumulation behind State violence (447).'),
     ('Meillassoux, Claude', 'In <i>The Anthropology of Slavery</i> (1986), the French anthropologist Claude Meillassoux shows a West African slave system joining the societies raided for captives, the aristocracies that raid them, and the merchants who sell the captives (74).'),
     ('Moreno García, Juan Carlos, and Seth Richardson', 'In <i>Monarchies and the Organization of Power</i> (2025), the historians Juan Carlos Moreno García and Seth Richardson find Egyptian and Babylonian kings co-opting local powers they could not erase (6), with fields measured by many kinds of officer (16).'),
     ('Mumford, Lewis', 'Machinic enslavement takes its image from the historian Lewis Mumford’s “megamachine,” the archaic empire as a machine made of people (428, 457).'),
     ('Munkh-Erdene, Lhamsuren', 'In <i>The Nomadic Leviathan</i> (2023), the Mongolian historian Lhamsuren Munkh-Erdene argues “for the nomadic origin of the state” in the warband of a charismatic warlord (1, 25).'),
     ('Myers, Fred', 'Among the Pintupi of Australia’s Western Desert, as the anthropologist Fred Myers describes them in <i>Pintupi Country, Pintupi Self</i> (1986), authority rests in the Law, outside any living person, even as elders’ ritual knowledge founds rank as “looking after” (220-21).'),
     ('Palmares', 'Palmares was a large runaway polity in 17th-century Brazil, which historians have described either as a kingdom or as a “republic” (RoV 118).'),
-    ('Price, Richard', 'In <i>First-Time</i> (1983), the anthropologist Richard Price records how the Saramaka of Suriname keep the history of their ancestors’ war against the planters, restricted and told in fragments.'),
+    ('Price, Richard', 'In <i>First-Time</i> (1983), the anthropologist Richard Price records how the Saramaka of Suriname keep the history of their ancestors’ war against the planters restricted, telling it only in fragments.'),
     ('Richardson, Seth', 'The historian of Mesopotamia Seth Richardson shows that Old Babylonian law treated flight as theft by whoever helped the slave (2023, 19-20).'),
     ('Sibertin-Blanc, Guillaume', 'In <i>State and Politics: Deleuze and Guattari on Marx</i> (2016), the philosopher Guillaume Sibertin-Blanc treats plateaus 12-13 as a theory of violence. For him each process meets a limit of its own, so that warding off, polarization, capture, and deployment in smooth space each reach a point past which they fail (55).'),
     ('Simondon, Gilbert', 'Following matter, as opposed to imposing form, draws on the philosopher Gilbert Simondon’s critique of the form-matter, or hylomorphic, model (408).'),
@@ -365,6 +365,8 @@ tr.transfer > * { padding: 12px; }
 .keysec { margin-top: 26px; max-width: 1200px; }
 .keysec h2 { font-family: var(--label); font-size: 1.05rem; margin: 0 0 4px; }
 .keysec p { margin: 0 0 12px; color: var(--muted); }
+.webnotes li { margin: 0 0 8px; }
+.webnotes li b { color: var(--ext); font-family: var(--label); margin-right: 6px; }
 dl.key dd { font-size: 0.92rem; }
 footer { max-width: 78ch; margin-top: 18px; color: var(--muted); font-size: 0.88rem; display: grid; gap: 8px; }
 footer p { margin: 0; }
@@ -446,16 +448,22 @@ FOOT_WEB = 'Page numbers without a prefix refer to the Minnesota translation of 
 FOOT = 'Page numbers without a prefix refer to the Minnesota translation of <i>A Thousand Plateaus</i> (1987), and those marked RoV to Protevi’s <i>Regimes of Violence</i> (Minnesota, 2025), while bold type marks the two terms of a double.'
 FONTS = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans+Condensed:wght@500;600&display=swap">'
 STICKY = """<script>
-/* Keep the title row at the top of the window while the table is on screen; the sideways-scrolling box stops CSS sticky. */
+/* Keep each table's title row at the top of the window while that table is on screen; a sideways-scrolling box stops CSS sticky. */
 (function () {
-  var wrap = document.querySelector('.wrap'), head = document.querySelector('thead');
-  if (!wrap || !head) return;
-  var cells = Array.prototype.slice.call(head.querySelectorAll('th')), ticking = false;
+  var heads = Array.prototype.slice.call(document.querySelectorAll('table > thead'));
+  if (!heads.length) return;
+  var items = heads.map(function (h) {
+    var t = h.parentNode;
+    return { box: t.closest('.wrap') || t, head: h, cells: Array.prototype.slice.call(h.querySelectorAll('th')) };
+  });
+  var ticking = false;
   function place() {
     ticking = false;
-    var r = wrap.getBoundingClientRect();
-    var y = Math.min(Math.max(0, -r.top), Math.max(0, r.height - head.offsetHeight));
-    for (var i = 0; i < cells.length; i++) cells[i].style.transform = y ? 'translateY(' + y + 'px)' : '';
+    items.forEach(function (it) {
+      var r = it.box.getBoundingClientRect();
+      var y = Math.min(Math.max(0, -r.top), Math.max(0, r.height - it.head.offsetHeight));
+      for (var i = 0; i < it.cells.length; i++) it.cells[i].style.transform = y ? 'translateY(' + y + 'px)' : '';
+    });
   }
   function ask() { if (!ticking) { ticking = true; requestAnimationFrame(place); } }
   window.addEventListener('scroll', ask, { passive: true });
@@ -468,16 +476,21 @@ V1 = "five_processes.html"
 V2 = "five_processes_marronage.html"
 
 
+# The findings from the record (R1-R8), as on the handout's notes page
+WEBNOTES = ('<section class="keysec"><h2>Findings from the record</h2><p>The markers R1-R8 on the chart point to findings from anthropology, archaeology, and history that complicate a cell or dispute it outright.</p>'
+            '<ol class="webnotes" style="list-style:none;padding:0;margin:0;max-width:1200px">{notes}</ol></section>')
+
+
 def web(cols, title, h1, intro_html, legend, other):
     six = " six" if "mar" in cols else ""
     return f'''<meta charset="utf-8">
 <title>{title}</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 {FONTS}
 <style>{TOKENS}{DARK}{SHARED}{WEB}</style>
 <header><h1>{h1}</h1>{intro_html}</header>
 {legend}
 <div class="wrap{six}">{table(cols)}</div>
+{WEBNOTES.format(notes=notes_list())}
 <section class="keysec"><h2>Who and what is named</h2><p>For readers who do not know the literature: each scholar and place on the chart, in a line.</p><dl class="key">{key_list()}</dl></section>
 <footer><p>{FOOT_WEB}</p><p>{other}</p></footer>
 {STICKY}
@@ -512,6 +525,32 @@ def save(name, text):
     open(os.path.join(HERE, name), "wb").write(text.encode("ascii", "xmlcharrefreplace"))
 
 
+def text_dump():
+    """Plain text of every cell, intro, note, and key entry, for the voice and quotation checks."""
+    out = [INTRO5_TEXT, INTRO6_WEB, TRANSFER, TRANSFER_MAR, FOOT_WEB]
+
+    def walk(x):
+        if isinstance(x, str):
+            if x not in ("SPLIT",) and x.strip():
+                out.append(x.replace("EXT:", "").strip())
+        elif isinstance(x, dict):
+            if "text" in x:
+                walk(x["text"])
+            else:
+                for v in x.values():
+                    walk(v)
+        elif isinstance(x, (list, tuple)):
+            for v in x:
+                walk(v)
+    for row in ROWS:
+        walk(row[1:])
+    out += list(NOTES.values()) + [d for _, d in KEY]
+    t = "\n\n".join(o for o in out if o)
+    for a, b in (("**", ""), ("[[", "("), ("]]", ")"), ("<i>", "*"), ("</i>", "*"), ("<b>", ""), ("</b>", "")):
+        t = t.replace(a, b)
+    return re.sub(r"<[^>]+>", "", t)
+
+
 def main():
     w1 = web(COLS5, "Five Machinic Processes", "The five machinic processes", f"<p>{INTRO5_TEXT}</p>", LEG5,
              f'With Protevi’s marronage column: <a href="{V2}">The five machinic processes, with marronage</a>.')
@@ -527,7 +566,8 @@ def main():
 {notes_sheet()}
 </body></html>'''
     save("five_processes_handout.html", doc)
-    print("wrote five_processes.html, five_processes_marronage.html, five_processes_handout.html")
+    open(os.path.join(HERE, "five_processes_text.md"), "w").write(text_dump() + "\n")
+    print("wrote five_processes.html, five_processes_marronage.html, five_processes_handout.html, five_processes_text.md")
 
 
 if __name__ == "__main__":

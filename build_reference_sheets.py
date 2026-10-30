@@ -26,7 +26,7 @@ CONCEPTS = [
      "Guattari in 1973 on a Neolithic organization that survives \"in Oriental despotism ... even in capitalism\" [[R13 129]]. Deleuze in 1979: projecting one form onto another without precaution is \"a catastrophe\" [[seminar, 20 Nov 1979]]",
      "Taken for a typology of societies, or flattened into capture against escape, which drops the town and the ecumenical (Protevi's table has neither, RoV xx-xxi)"),
     ("Warding off (anticipation-prevention)", "357-59, 429-33, 437-40",
-     "Mechanisms by which a society anticipates a power it has never seen in order to prevent it",
+     "The ways in which a society anticipates a power it has never seen, so as to prevent it",
      "Clastres's chief without command (<i>Society against the State</i>), Lévi-Strauss's two village plans (<i>Structural Anthropology</i> 149-51), and Mauss on the destruction of wealth",
      "Deleuze names Mauss as the source that Clastres \"took up and renewed\" [[seminar, 20 Nov 1979]]. Guattari on the potlatch: \"above all no reciprocity, even when there is reciprocity\" [[R13 142]]",
      "An evolved disposition (Boehm's reverse dominance hierarchy, RoV 98), a damping mechanism (Protevi's \"thick threshold\"), or a costless equality"),
@@ -47,7 +47,7 @@ CONCEPTS = [
      "Taken for a historical despotism, or for an origin"),
     ("Polarization (the town)", "432-35",
      "The town as a point on circuits of roads, a power \"of the middle\" that coordinates by force",
-     "Fourquet and Murard's <i>Les équipements du pouvoir</i> (\"The Facilities of Power\") (1976), along with Braudel's \"two runners, the state and the town\" and Lévi-Strauss's village plans",
+     "Fourquet and Murard's 1976 <i>Les équipements du pouvoir</i> (\"The Facilities of Power\"), along with Braudel's \"two runners, the state and the town\" and Lévi-Strauss's village plans",
      "Towns \"always emerge as a network\" before any territorial State, as with the Hanse [[R13 70-71, 89-92]]. Deleuze: \"a bureaucracy of networks\" [[seminar, 20 Nov 1979]]",
      "Almost absent from the reception, and near zero in Protevi"),
     ("Encompassment (the ecumenical)", "435-36, 454",
@@ -66,7 +66,7 @@ CONCEPTS = [
      "Guattari in 1973: capital is \"obliged to enlarge its own axiomatic without stopping\" and \"the first axiom of capital is recuperation\" [[R13 133, 140]]",
      "Folded into capture as co-optation, with recuperation as fate, though ATP calls recuperation a \"disenchanted concept\" (463)"),
     ("The stock", "440-44",
-     "What begins when exchange is no longer of interest, with land, tools, and money as stockpiled territory, activity, and exchange",
+     "What begins when exchange stops being of interest, with land, tools, and money as stockpiled territory, activity, and exchange",
      "Ingold on social storage (1983), Testart (1982), and Jacobs and Mellaart on Çatal Hüyük",
      "The State as \"a social machine ... for putting flows in reserve\" [[R13 72]]",
      "Storage as a threshold toward the State (Sterelny, in RoV 98)"),
@@ -178,7 +178,7 @@ SROWS = [
         "nat": "The **axiomatic**, which deals \"directly with purely functional elements and relations\" [[454]]"}, []),
     ("What binds people?", {
         "arch": "The nexum, \"the objective, imperial collective bond\" [[428, 460]]",
-        "evol": "Personal bonds, whether contracts between owners or conventions between the owned and their owners [[451]]",
+        "evol": "Personal bonds, from contracts between owners to the conventions that tie the owned to their owners [[451]]",
         "nat": "\"The Subject that binds itself,\" a contract \"between self and self\" [[460]]"},
      [dict(a="arch", z="nat", text="**One moment** of the State through all its forms: \"capture, bond, knot, nexum, magical capture\" [[460]]", kind="pair")]),
     ("What becomes of property?", {
@@ -308,7 +308,7 @@ LIBRARY = [
     ]),
     ("Anthropology and ethnography", [
         ("Pierre Clastres, <i>Society against the State</i> (1977), \"Archéologie de la violence\" (1980)", "Warding off the State, war against the State, the chief without command", "357-59, 429", False),
-        ("Mauss (by way of Clastres)", "The potlatch as a mechanism against the concentration of wealth", "357", False),
+        ("Mauss (by way of Clastres)", "The potlatch as a check on the concentration of wealth", "357", False),
         ("Lévi-Strauss, <i>Structural Anthropology</i> (149-51)", "One village, two plans, segmentary or hierarchized", "433", False),
         ("Berthe, \"Aînés et cadets\" (1965)", "The \"third village\" that keeps the circuit from closing", "433", False),
         ("Meunier, <i>Les gamins de Bogota</i> (1977)", "Street gangs that keep their leader from gaining stable power", "358", False),
@@ -350,7 +350,7 @@ LIBRARY = [
         ("Proclus, and Bouligand, <i>Le déclin des absolus</i> (1949)", "The theorematic against the problematic, problems against the global synthesis", "362, 374", False),
         ("Husserl, <i>Ideas</i> I §74, <i>Origin of Geometry</i> (with Derrida)", "Vague essences, protogeometry", "367", False),
         ("Bachelard, <i>Essai sur la connaissance approchée</i> (1927)", "The rigor of the anexact", "367", False),
-        ("Simondon, <i>L'individu</i> (1964), <i>Du mode d'existence</i> (1969)", "The critique of hylomorphism, from molding and modulation to metallurgy", "369, 408-10", False),
+        ("Simondon, <i>L'individu</i> (1964), <i>Du mode d'existence</i> (1969)", "The critique of hylomorphism, from the mold to modulation and metallurgy", "369, 408-10", False),
         ("Lautman, <i>Les schémas de structure</i> (1938)", "Riemann spaces immersed in a Euclidean one", "373", False),
         ("Brunschvicg, Chasles, Desargues's <i>Oeuvres</i>", "The line from Desargues to Monge and Poncelet, \"founders of a modern geometry\"", "363, 365", False),
         ("Kristeva, <i>Semeiotike</i> (1969)", "The traits of the numbering number", "390", False),
@@ -405,7 +405,7 @@ L_FOOT = 'Pages are those of the text where a source enters, with the notes to t
 # ---------------------------------------------------------------- 3b. The workshop around the plateaus (library, back)
 # The texts where the plateaus' ideas are worked out outside the book. Detail and verified quotations: work/context/.
 SESSIONS = [  # 1979-80 seminar, "Apparatuses of Capture and War Machines" (Purdue edition, PDF page of each session)
-    ("1", "6 Nov 1979", "The year's five oppositions (space, number, work and free action, weapons-jewels and tools-signs, affects and sentiments); police before army; the phylum; Engels's three theses; the three heads of capture", "351-403, 424-48"),
+    ("1", "6 Nov 1979", "The year's five oppositions: space, number, work against free action, weapons and jewels against tools and signs, and affects against sentiments. Also police before army, the phylum; Engels's three theses; the three heads of capture", "351-403, 424-48"),
     ("2", "13 Nov 1979", "Civil capture; the Asiatic mode; code and overcoding; the megamachine; machinic enslavement and social subjection; Jacobs's stock before agriculture", "424-29, 449-58"),
     ("3", "20 Nov 1979", "Clastres and Mauss; anticipation-warding off; the two waves; town and State (Braudel); the ecumenical; \"the last glass\"", "357-60, 429-39"),
     ("4", "27 Nov 1979", "The marginal shepherd; limit and threshold; seeds against obsidian axes", "435-39"),
@@ -421,7 +421,7 @@ SESSIONS = [  # 1979-80 seminar, "Apparatuses of Capture and War Machines" (Purd
 ]
 WORKSHOP = [
     ("Deleuze's other seminars", [
-        ("27 Feb 1979, \"Metal, Metallurgy, Music, Husserl, Simondon\"", "Vague essences, molding and modulation, metal as continuous variation, the smith and the musician", "367-69, 404-15"),
+        ("27 Feb 1979, \"Metal, Metallurgy, Music, Husserl, Simondon\"", "Vague essences, molding against modulation, metal as continuous variation, the smith beside the musician", "367-69, 404-15"),
         ("1977 (A Thousand Plateaus II)", "Kleist against Goethe, haecceities, the two planes", "355-56, 368-69"),
         ("1971-72 (Anti-Oedipus I)", "The Asiatic State \"in one blow\", code and axiomatic, finite and infinite debt", "427, 449-55"),
         ("1981 (Painting)", "Worringer's Gothic line, Riegl's haptic", "382, 411"),
@@ -531,8 +531,8 @@ def handout(title, pages):
 
 def web(title, h1, parts, foot):
     body = "".join(f'<h2 class="sec">{h}</h2><p class="secp">{p}</p>{b}' if h else f'<header><h1>{h1}</h1><p>{p}</p></header>{b}' for h, p, b in parts)
-    return (f'<meta charset="utf-8"><title>{title}</title><meta name="claude:viewport-fit-sides" content="cover">{g.FONTS}'
-            f'<style>{g.TOKENS}{g.DARK}{g.SHARED}{g.WEB}{CSS}{WCSS}</style>{body}<footer><p>{foot}</p></footer>')
+    return (f'<meta charset="utf-8"><title>{title}</title>{g.FONTS}'
+            f'<style>{g.TOKENS}{g.DARK}{g.SHARED}{g.WEB}{CSS}{WCSS}</style>{body}<footer><p>{foot}</p></footer>{g.STICKY}')
 
 
 def text_dump():

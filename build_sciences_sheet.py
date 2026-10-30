@@ -99,11 +99,11 @@ MEET = "\"Two formally different conceptions of science, and, ontologically, a s
 
 # Findings from the specialist record that complicate a cell (shown as "Record" notes).
 NOTES = {
-    ("How autonomous is it?", "royal"): "In fact, in ancient Egypt and Babylonia, fields were measured by a dozen kinds of officer with no fixed competence, which is to say royal measure without a royal science (Moreno García and Richardson).",
-    ("How does it proceed?", "minor"): "Yet following can also be trained into the State's service. Tracking, which Louis Liebenberg presents as the origin of science among Kalahari hunters, is also the craft of the Shadow Wolves, a United States border unit of Native American trackers.",
-    ("How do matter and form relate?", "minor"): "A 1769 militia map of a runaway settlement in Minas Gerais, Brazil, marks its smithies and gardens beside its hidden defenses and \"holes for escape\" (Carney and Rosomoff, 85).",
-    ("What does an equation do?", "royal"): "Indeed, the Indus cities had standard weights, seals, and writing but no palaces or royal tombs (Green), so a fixed measure need not belong to a ruler.",
-    ("Who practices it, and what happens to them?", "minor"): "Minor science still has practitioners. The Jamaican Maroons learn their \"Maroon Science\" through \"testing and evasion\" (Bilby), and the Saramaka of Suriname keep the history of their war against the planters restricted and in fragments (Price).",
+    ("How autonomous is it?", "royal"): "In ancient Egypt and Babylonia, fields were measured by a dozen kinds of officer, none of them with a fixed competence, which amounts to a royal measure without a royal science (Moreno García and Richardson).",
+    ("How does it proceed?", "minor"): "Even following can be enlisted by the State. Tracking, which Louis Liebenberg presents as the origin of science among Kalahari hunters, is today the craft of the Shadow Wolves, a United States border unit of Native American trackers.",
+    ("How do matter and form relate?", "minor"): "On a 1769 militia map of a runaway settlement in Minas Gerais, Brazil, the smithies and gardens are marked beside the hidden defenses and \"holes for escape\" (Carney and Rosomoff, 85).",
+    ("What does an equation do?", "royal"): "More telling still, the Indus cities had standard weights, seals, and writing but no palaces or royal tombs (Green), so that a fixed measure need not belong to a ruler.",
+    ("Who practices it, and what happens to them?", "minor"): "Although it is often taken for a thing of the past, minor science still has practitioners. The Jamaican Maroons learn their \"Maroon Science\" through \"testing and evasion\" (Bilby), and the Saramaka of Suriname keep the history of their war against the planters restricted and in fragments (Price).",
 }
 NOTE_ID = {k: i for i, k in enumerate(NOTES, 1)}
 
@@ -139,17 +139,17 @@ QUESTIONS = [
 ]
 
 KEY_NEW = [
-    ('Archimedes, Democritus, Lucretius', 'Ancient sources of minor science: Archimedes\' geometry of curves and the atomism of Democritus and Lucretius, as Michel Serres treats them (361-62).'),
-    ('Bergson, Henri', 'The relation between the two sciences is \"somewhat like intuition and intelligence in Bergson,\" where only intelligence can solve formally the problems that intuition poses (374).'),
-    ('Bernard de Clairvaux, Garin de Troyes', 'The twelfth-century abbot and, by legend, his monk-mason, whose \"operative logic of movement\" stands for the geometry of the Gothic journeymen (364).'),
+    ('Archimedes, Democritus, Lucretius', 'Deleuze and Guattari take these as the ancient sources of minor science, namely Archimedes\' geometry of curves and the atomism of Democritus and Lucretius, as Michel Serres treats them (361-62).'),
+    ('Bergson, Henri', 'Deleuze and Guattari find the relation between the two sciences \"somewhat like intuition and intelligence in Bergson,\" where only intelligence can solve formally the problems that intuition poses (374).'),
+    ('Bernard de Clairvaux, Garin de Troyes', 'Bernard of Clairvaux, abbot in the twelfth century, together with Garin, by legend his monk-mason, whose \"operative logic of movement\" stands for the geometry of the Gothic journeymen (364).'),
     ('Breiman, Leo', 'In \"Statistical Modeling: The Two Cultures\" (2001), the statistician Leo Breiman contrasts models of how data are generated with algorithms that predict without such a model.'),
     ('Desargues, Monge, Poncelet, Carnot, Vauban, Perronet', 'Engineers and mathematicians whom Deleuze and Guattari place on the borderline, from Vauban\'s fortifications and Desargues\'s perspective to Perronet\'s bridges (363-65).'),
-    ('Frangipane, Marcella', 'The archaeologist Marcella Frangipane describes the clay sealings of the \"burnt village\" at Sabi Abyad in northern Syria, some eight thousand years old, as records of stores shared \"probably along egalitarian lines\" (2018).'),
-    ('Hudson, Michael', 'The economic historian Michael Hudson reconstructs the royal cancellations of agrarian debt in the ancient Near East, the \"clean slates\" (2002).'),
-    ('Liebenberg, Louis, and the Shadow Wolves', 'In <i>The Art of Tracking: The Origin of Science</i> (1990), Louis Liebenberg studies Kalahari trackers. The Shadow Wolves are a unit of Native American trackers working for United States immigration enforcement on the Tohono O\'odham Nation in Arizona.'),
-    ('Querrien, Anne', 'The CERFI sociologist Anne Querrien, whose work on State engineering gives Deleuze and Guattari the Gothic cathedrals and the bridges of the Ponts et Chaussées (364-66).'),
+    ('Frangipane, Marcella', 'Marcella Frangipane, an archaeologist, describes the clay sealings of the \"burnt village\" at Sabi Abyad in northern Syria, some eight thousand years old, as records of stores shared \"probably along egalitarian lines\" (2018).'),
+    ('Hudson, Michael', 'Michael Hudson, an economic historian, reconstructs the royal cancellations of agrarian debt in the ancient Near East, the \"clean slates\" (2002).'),
+    ('Liebenberg, Louis, and the Shadow Wolves', 'In <i>The Art of Tracking: The Origin of Science</i> (1990), Louis Liebenberg studies Kalahari trackers. Today, the Shadow Wolves are a unit of Native American trackers working for United States immigration enforcement on the Tohono O\'odham Nation in Arizona.'),
+    ('Querrien, Anne', 'Anne Querrien, the CERFI sociologist whose work on State engineering gives Deleuze and Guattari the Gothic cathedrals and the bridges of the Ponts et Chaussées (364-66).'),
     ('Serres, Michel', 'In <i>The Birth of Physics</i> (1977), the philosopher Michel Serres finds a hydraulic physics in Lucretius, and with it the two sciences, \"a general theory of routes and paths, and a global theory of waves\" (361, 372).'),
-    ('Will, Édouard', 'The historian of archaic Greece Édouard Will, whose account of Corinth makes money derive from taxation (442).'),
+    ('Will, Édouard', 'Édouard Will, a historian of archaic Greece, whose account of Corinth makes money derive from taxation (442).'),
 ]
 REUSE = ["Bilby, Kenneth", "Carney, Judith, and Richard Rosomoff", "Casimir, Jean", "Green, Adam", "Humphrey, Caroline, and David Sneath",
          "Husserl, Edmund", "Indus, Sumer, Uruk", "Ingold, Tim", "Lévi-Strauss, Claude", "Moreno García, Juan Carlos, and Seth Richardson",
@@ -157,12 +157,14 @@ REUSE = ["Bilby, Kenneth", "Carney, Judith, and Richard Rosomoff", "Casimir, Jea
 KEY = [k if k[0] != "Carney, Judith, and Richard Rosomoff" else (k[0], k[1].replace("booby traps", "hidden defenses")) for k in g.KEY if k[0] in REUSE] + KEY_NEW
 assert len([k for k in g.KEY if k[0] in REUSE]) == len(REUSE), "a reused key entry is missing"
 
-INTRO = ('Deleuze and Guattari distinguish two kinds of science, or two conceptions of science, that share \"a single field of interaction\" (367). '
-         'The <b>royal</b> science of the State reproduces, deduces, and extracts constants. In contrast, <b>minor</b> or nomad science follows a material and poses problems that it cannot solve on its own. '
-         'The middle column, which is the reason for this sheet, records how one passes into the other, whether by translation, appropriation, repression, or the cutting loose of what was taken. '
-         'It is the companion to <i>The five machinic processes</i>, which gives this whole matter a single row, \"How is knowledge made?\"')
-INTRO_Q = ('A nomadology works with other fields, here anthropology, archaeology, and history, without taking on their frame along with their findings. '
-           'Each row below changes a question that those fields often ask from the side of the State into one that a nomadology can pursue, with the pages that ground it and a case from the specialist literature.')
+INTRO = ('Working out the thrust of the stone on site rather than from an architect\'s plan on paper, the Gothic journeymen who raised the cathedrals practiced what Deleuze and Guattari call a <b>minor</b> or nomad science (364-68). '
+         'Such a science follows its material and poses problems that it cannot solve on its own (how to vault a nave higher than the Romanesque, for instance). '
+         'As a result, its findings tend to be taken over by the <b>royal</b> science of the State, which reproduces, deduces, and extracts constants. '
+         'But the two are not simply opposed, as they share \"a single field of interaction\" (367) in which what one appropriates, the other is forever cutting loose again. '
+         'And it is this borderline that the middle column records, whether the passage is by translation, appropriation, repression, or the cutting loose of what was taken. '
+         'Altogether, the sheet serves as a companion to <i>The five machinic processes</i>, which gives the whole matter a single row (\"How is knowledge made?\").')
+INTRO_Q = ('A nomadology can thus work with anthropology, archaeology, and history without taking on their frame along with their findings. '
+           'Many of the questions these fields ask, such as how the State originated or who lived free of it, are asked from the side of the State, and each row below turns one of them into a question that a nomadology can pursue, with the pages that ground it and a case from the specialist literature.')
 FOOT = ('Page numbers refer to the Minnesota translation of <i>A Thousand Plateaus</i> (1987). Bold type marks the two terms of a contrast. '
         'Dashed cells are proposed extensions, not claims made in <i>A Thousand Plateaus</i>. Markers R1-R5 point to findings from the record, listed on the notes page. '
         'The two sciences are worked out in Deleuze\'s seminar of 26 February 1980 (Euclid and Archimedes, Desargues, Monge, Poncelet, the intuitionists) and of 27 February 1979 (Husserl\'s vague essences, Simondon); passages in <i>work/context/</i>.')
@@ -260,7 +262,6 @@ def web():
     g.MODE["print"] = False
     return f'''<meta charset="utf-8">
 <title>Two Sciences</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 {g.FONTS}
 <style>{g.TOKENS}{g.DARK}{g.SHARED}{g.WEB}{CSS}{WCSS}</style>
 <header><h1>Nomadology's two sciences</h1><p>{INTRO}</p></header>
@@ -268,6 +269,7 @@ def web():
 <div class="wrap">{grid()}</div>
 <h2 class="sec">Working with another field</h2><p class="secp">{INTRO_Q}</p>
 <div class="wrap qw">{qtable()}</div>
+<section class="keysec"><h2>Findings from the record</h2><p>The markers R1-R5 on the chart point to findings from anthropology, archaeology, and history that complicate a cell.</p><ol class="webnotes" style="list-style:none;padding:0;margin:0;max-width:1200px">{notes_list()}</ol></section>
 <section class="keysec"><h2>Who and what is named</h2><p>For readers who do not know the literature: each scholar and place on the sheet, in a line.</p><dl class="key">{key_list()}</dl></section>
 <footer><p>{FOOT}</p></footer>
 {g.STICKY}

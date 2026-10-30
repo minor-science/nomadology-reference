@@ -10,7 +10,7 @@ Deleuze and Guattari built nomadology out of other people's research: myth, anth
 
 Much of the two plateaus was worked out aloud first, in the 1979-80 seminar at Vincennes on "Apparatuses of Capture and War Machines", thirteen sessions between November and March, with students (Éric Alliez, Georges Comtesse, Richard Pinhas, Claire Parnet) intervening. The table matches each session to the pages it develops; the list below names the other places the ideas live. Every passage, with verified quotations, is in *work/context/context_12_13.md* and under "Elsewhere" on the web reference.
 
-The year's five oppositions (space, number, work and free action, weapons-jewels and tools-signs, affects and sentiments); police before army; the phylum; Engels's three theses; the three heads of capture
+The year's five oppositions: space, number, work against free action, weapons and jewels against tools and signs, and affects against sentiments. Also police before army, the phylum; Engels's three theses; the three heads of capture
 
 Civil capture; the Asiatic mode; code and overcoding; the megamachine; machinic enslavement and social subjection; Jacobs's stock before agriculture
 
@@ -36,7 +36,7 @@ Aim and objective; the immanent limit; Linhart's "modern hunger"; isomorphy; the
 
 Metallurgical peoples and holey space; nomads in place; power and total war; undecidables; minorities
 
-Vague essences, molding and modulation, metal as continuous variation, the smith and the musician
+Vague essences, molding against modulation, metal as continuous variation, the smith beside the musician
 
 Kleist against Goethe, haecceities, the two planes
 
@@ -64,7 +64,7 @@ Guattari in 1973 on a Neolithic organization that survives "in Oriental despotis
 
 Taken for a typology of societies, or flattened into capture against escape, which drops the town and the ecumenical (Protevi's table has neither, RoV xx-xxi)
 
-Mechanisms by which a society anticipates a power it has never seen in order to prevent it
+The ways in which a society anticipates a power it has never seen, so as to prevent it
 
 Clastres's chief without command (*Society against the State*), Lévi-Strauss's two village plans (*Structural Anthropology* 149-51), and Mauss on the destruction of wealth
 
@@ -98,7 +98,7 @@ Taken for a historical despotism, or for an origin
 
 The town as a point on circuits of roads, a power "of the middle" that coordinates by force
 
-Fourquet and Murard's *Les équipements du pouvoir* ("The Facilities of Power") (1976), along with Braudel's "two runners, the state and the town" and Lévi-Strauss's village plans
+Fourquet and Murard's 1976 *Les équipements du pouvoir* ("The Facilities of Power"), along with Braudel's "two runners, the state and the town" and Lévi-Strauss's village plans
 
 Towns "always emerge as a network" before any territorial State, as with the Hanse (R13 70-71, 89-92). Deleuze: "a bureaucracy of networks" (seminar, 20 Nov 1979)
 
@@ -128,7 +128,7 @@ Guattari in 1973: capital is "obliged to enlarge its own axiomatic without stopp
 
 Folded into capture as co-optation, with recuperation as fate, though ATP calls recuperation a "disenchanted concept" (463)
 
-What begins when exchange is no longer of interest, with land, tools, and money as stockpiled territory, activity, and exchange
+What begins when exchange stops being of interest, with land, tools, and money as stockpiled territory, activity, and exchange
 
 Ingold on social storage (1983), Testart (1982), and Jacobs and Mellaart on Çatal Hüyük
 
@@ -264,7 +264,7 @@ The axiomatic, which deals "directly with purely functional elements and relatio
 
 The nexum, "the objective, imperial collective bond" (428, 460)
 
-Personal bonds, whether contracts between owners or conventions between the owned and their owners (451)
+Personal bonds, from contracts between owners to the conventions that tie the owned to their owners (451)
 
 "The Subject that binds itself," a contract "between self and self" (460)
 
@@ -370,7 +370,7 @@ The desert fathers, Christianity's own bands and deserts
 
 Warding off the State, war against the State, the chief without command
 
-The potlatch as a mechanism against the concentration of wealth
+The potlatch as a check on the concentration of wealth
 
 One village, two plans, segmentary or hierarchized
 
@@ -442,7 +442,7 @@ Vague essences, protogeometry
 
 The rigor of the anexact
 
-The critique of hylomorphism, from molding and modulation to metallurgy
+The critique of hylomorphism, from the mold to modulation and metallurgy
 
 Riemann spaces immersed in a Euclidean one
 
