@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://use.typekit.net/hkq4frz.css">
 <title>Nomadology reference: sheets on A Thousand Plateaus, plateaus 12 and 13</title>
 <!--seo-->
 <meta name="description" content="Reference sheets on plateaus 12 and 13 of Deleuze and Guattari&#x27;s A Thousand Plateaus: the Treatise on Nomadology and the Apparatus of Capture.">
@@ -38,7 +39,7 @@
  },
  "inLanguage": "en",
  "keywords": "Deleuze, Guattari, A Thousand Plateaus, nomadology, Treatise on Nomadology, Apparatus of Capture, war machine, nomad science, minor science",
- "dateModified": "2026-10-29",
+ "dateModified": "2026-10-30",
  "image": "https://minor-science.github.io/nomadology-reference/og.png",
  "@type": "CollectionPage",
  "isPartOf": {
@@ -148,64 +149,99 @@
 </script>
 <!--/seo-->
 <style>
-:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#66635c;--line:#d8d4c8;--acc:#7a3b1d}
-@media (prefers-color-scheme:dark){:root{--bg:#161614;--fg:#ecebe6;--mut:#a39f95;--line:#34332f;--acc:#e0a47e}}
-body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 Georgia,"Times New Roman",serif}
-main{max-width:44rem;margin:0 auto;padding:2.5rem 16px 4rem}
-h1{font-size:1.7rem;line-height:1.25;margin:0 0 .6rem}
-h2{font:600 .78rem/1.3 system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin:2.4rem 0 .4rem}
-p{margin:.7rem 0}.lede{color:var(--mut)}
-ul{list-style:none;padding:0;margin:.4rem 0}
-li{padding:.9rem 0;border-top:1px solid var(--line)}
-li:last-child{border-bottom:1px solid var(--line)}
-.t{font-weight:600}.t a{color:var(--fg);text-decoration-color:var(--acc);text-underline-offset:3px}
-.d{display:block;color:var(--mut);font-size:.95em;margin-top:.2rem}
-.f{font:.82rem system-ui,sans-serif;margin-top:.35rem;display:block}.f a{color:var(--acc);margin-right:.9rem}
-.soon .t{color:var(--mut);font-weight:400}
-footer{margin-top:2.5rem;color:var(--mut);font-size:.9em}
-footer a{color:var(--acc)}
+/* The minor-science poster system: copy paper on a black field, black and one red;
+   Comma Sans for titles, Warbler for reading, New Science Mono for apparatus. */
+:root{--field:#0b0b0b;--paper:#f8f7f2;--ink:#121212;--red:#c8361a;--grey:#4f4d48;--focus:#0047ff;
+  --grot:"comma-sans",Helvetica,Arial,sans-serif;--serif:"warbler-text",Georgia,serif;--mono:"new-science-mono",ui-monospace,monospace}
+*{box-sizing:border-box}
+html{background:var(--field);font-synthesis:none}
+body{margin:0;background:var(--field);color:var(--ink);font:400 1.0625rem/1.5 var(--serif);padding:clamp(12px,3vw,48px)}
+a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:1px}
+a:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.mono{font:400 .875rem/1.3 var(--mono)}
+.sheet{max-width:78rem;margin:0 auto;background:var(--paper);padding:clamp(16px,3.2vw,44px);display:grid;gap:clamp(.75rem,1.5vw,1.25rem);grid-template-columns:repeat(12,minmax(0,1fr))}
+.sheet>*{min-width:0}
+.run{grid-column:1/-1;display:flex;justify-content:space-between;gap:1rem}
+.run a{text-decoration:none}.run a:hover{text-decoration:underline}
+
+h1{grid-column:1/-1;margin:.5rem 0 0;font-weight:400}
+h1 .big{display:block;font:700 clamp(2.6rem,12.4vw,11rem)/.82 var(--grot);letter-spacing:-.045em;text-transform:uppercase;white-space:nowrap}
+h1 .big .o{color:transparent;-webkit-text-stroke:2.5px var(--ink)}
+h1 .sub{display:block;margin-top:.9rem;font:400 clamp(1.4rem,2.6vw,2.1rem)/1.15 var(--serif)}
+.ticks{grid-column:1/-1;height:10px;background:repeating-linear-gradient(90deg,var(--ink) 0 1px,transparent 1px 12px);opacity:.6}
+.lede{grid-column:1/7;margin:0;font-size:1.125rem}
+.note{grid-column:8/13;margin:0;font-size:1rem;color:var(--grey)}
+
+h2{grid-column:1/-1;margin:1.75rem 0 0;font:400 1rem/1 var(--serif);font-variant-caps:all-small-caps;letter-spacing:.08em;color:var(--red)}
+.sheets{grid-column:1/-1;list-style:none;margin:0;padding:0;display:grid;gap:clamp(1rem,2vw,1.75rem) clamp(.75rem,1.5vw,1.25rem);grid-template-columns:repeat(3,minmax(0,1fr))}
+.sheets li{border-top:2px solid var(--ink);padding-top:.7rem;display:flex;flex-direction:column;gap:.6rem}
+.sheets .lab{display:flex;justify-content:space-between;gap:1rem}
+.sheets h3{margin:0;font:700 clamp(1.35rem,2vw,1.7rem)/1.05 var(--grot);letter-spacing:-.02em}
+.sheets h3 a{text-decoration:none}
+.sheets h3 a:hover{text-decoration:underline;text-decoration-color:var(--red);text-decoration-thickness:2px}
+.sheets p{margin:0}
+.sheets .f{font:400 .9375rem/1.4 var(--mono)}
+.sheets .f a{margin-right:1.25rem}
+.sheets .wide{grid-column:span 2}
+.soon h3{color:var(--grey)}
+
+footer{grid-column:1/-1;border-top:2px solid var(--ink);margin-top:1.5rem;padding-top:.9rem;font-size:1rem}
+footer p{margin:0;max-width:52rem}
+@media (max-width:860px){.lede,.note{grid-column:1/-1}.sheets{grid-template-columns:1fr}.sheets .wide{grid-column:auto}}
 </style></head>
-<body><main>
-<h1>Nomadology: reference sheets for <i>A Thousand Plateaus</i>, plateaus 12 and 13</h1>
+<body><main class="sheet">
+<p class="run mono"><a href="https://minor-science.github.io/">Minor science</a><span>Reference sheets</span></p>
+<h1><span class="vh">Nomadology: reference sheets for A Thousand Plateaus, plateaus 12 and 13</span><span class="big" aria-hidden="true">Nomad<span class="o">ology</span></span><span class="sub" aria-hidden="true">Reference sheets for <i>A Thousand Plateaus</i>, plateaus 12 and 13</span></h1>
+<div class="ticks" aria-hidden="true"></div>
 <p class="lede">Working references for the two plateaus in which Deleuze and Guattari set out nomadology: "1227: Treatise on Nomadology - The War Machine" and "7000 B.C.: Apparatus of Capture." They were made while writing a response to John Protevi's <i>Regimes of Violence: Toward a Political Anthropology</i> (Minnesota, 2025), which takes up both plateaus and adds a figure of its own, the maroon.</p>
-<p>Page numbers without a prefix refer to Brian Massumi's translation (Minnesota, 1987); <i>Mille plateaux</i> (Minuit, 1980) is cited where the French wording counts, while RoV marks Protevi. Each sheet has a web version and a printable PDF.</p>
+<p class="note">Page numbers without a prefix refer to Brian Massumi's translation (Minnesota, 1987); <i>Mille plateaux</i> (Minuit, 1980) is cited where the French wording counts, while RoV marks Protevi. Each sheet has a web version and a printable PDF.</p>
 
 <h2>The two plateaus, axiom by axiom</h2>
-<ul>
-<li><span class="t"><a href="plateaus_reference.html">Treatise on Nomadology and Apparatus of Capture, entry by entry</a></span>
-<span class="d">Each numbered entry of the two plateaus (Axioms I-III, Propositions I-XIV, Problems I-III), with the claims, contrasts, lists and definitions under it, by page. On the web, it can be searched and shows the quotations. A second tab regroups the same material by theme, from royal and nomad science and the three spaces to number, the war machine, and weapons set against tools.</span>
-<span class="f"><a href="plateaus_reference.html">Web, searchable</a><a href="plateaus_beat_sheet.html">Index</a><a href="plateaus_beat_sheet.pdf">PDF</a></span></li>
+<ul class="sheets">
+<li class="wide"><div class="lab mono"><span>[1]</span><span>351-473</span></div>
+<h3><a href="plateaus_reference.html">Treatise on Nomadology and Apparatus of Capture, entry by entry</a></h3>
+<p>Each numbered entry of the two plateaus (Axioms I-III, Propositions I-XIV, Problems I-III), with the claims, contrasts, lists and definitions under it, by page. On the web, it can be searched and shows the quotations. A second tab regroups the same material by theme, from royal and nomad science and the three spaces to number, the war machine, and weapons set against tools.</p>
+<p class="f"><a href="plateaus_reference.html">Web, searchable</a><a href="plateaus_beat_sheet.html">Index</a><a href="plateaus_beat_sheet.pdf">PDF</a></p></li>
 </ul>
 
 <h2>Concepts</h2>
-<ul>
-<li><span class="t"><a href="five_processes.html">The five machinic processes</a></span>
-<span class="d">"We define social formations by machinic processes and not by modes of production" (435): mechanisms of prevention-anticipation, war machines, apparatuses of capture, polarization in towns, and ecumenical or international organization, each in coexistence with the others (430-37). A second version adds Protevi's marronage as a column.</span>
-<span class="f"><a href="five_processes.html">Web</a><a href="five_processes_marronage.html">With marronage</a><a href="five_processes_handout.pdf">PDF</a></span></li>
-<li><span class="t"><a href="two_sciences.html">Royal science and nomad science</a></span>
-<span class="d">Proposition IV of the Treatise (361-74) sets royal, theorematic science against minor, problematic science (hydraulic models, smooth space, vague essences) along a "constantly shifting borderline" (367). On its back page, questions that anthropology, archaeology, and history ask from the side of the State become questions for a nomadology.</span>
-<span class="f"><a href="two_sciences.html">Web</a><a href="sciences_handout.pdf">PDF</a></span></li>
-<li><span class="t"><a href="state_forms.html">The State's three forms</a></span>
-<span class="d">Proposition XIII of Apparatus of Capture, the State's forms, set out question by question from the archaic imperial State (the Urstaat) through the evolved States to the modern nation-States (459). Its questions run from regimes of signs and forms of law to what each form does with the war machine.</span>
-<span class="f"><a href="state_forms.html">Web</a><a href="state_forms_handout.pdf">PDF</a></span></li>
-<li><span class="t"><a href="concordance.html">Nomadology's concepts, and how they have moved</a></span>
-<span class="d">A concordance of the plateaus' concepts (nomos, the war machine, the apparatus of capture, the right of use and others) in plain words, with the field in which each began, where it was worked out before 1980 (CERFI's <i>Recherches</i> of 1972-73, Deleuze's Vincennes seminars of 1979-80), and how it has been taken up since.</span>
-<span class="f"><a href="concordance.html">Web</a><a href="concordance_handout.pdf">PDF</a></span></li>
-<li><span class="t"><a href="after1980.html">After 1980: what the record does to nomadology's claims</a></span>
-<span class="d">Claim by claim, the archaeology, anthropology and history since the plateaus that confirm, complicate or dispute them, along with the literatures since 1980 placed on a single scale and the scholarship on nomadology by strand.</span>
-<span class="f"><a href="after1980.html">Web</a><a href="after1980_handout.pdf">PDF</a></span></li>
+<ul class="sheets">
+<li><div class="lab mono"><span>[2]</span><span>430-37</span></div>
+<h3><a href="five_processes.html">The five machinic processes</a></h3>
+<p>"We define social formations by machinic processes and not by modes of production" (435): mechanisms of prevention-anticipation, war machines, apparatuses of capture, polarization in towns, and ecumenical or international organization, each in coexistence with the others (430-37). A second version adds Protevi's marronage as a column.</p>
+<p class="f"><a href="five_processes.html">Web</a><a href="five_processes_marronage.html">With marronage</a><a href="five_processes_handout.pdf">PDF</a></p></li>
+<li><div class="lab mono"><span>[3]</span><span>361-74</span></div>
+<h3><a href="two_sciences.html">Royal science and nomad science</a></h3>
+<p>Proposition IV of the Treatise (361-74) sets royal, theorematic science against minor, problematic science (hydraulic models, smooth space, vague essences) along a "constantly shifting borderline" (367). On its back page, questions that anthropology, archaeology, and history ask from the side of the State become questions for a nomadology.</p>
+<p class="f"><a href="two_sciences.html">Web</a><a href="sciences_handout.pdf">PDF</a></p></li>
+<li><div class="lab mono"><span>[4]</span><span>459</span></div>
+<h3><a href="state_forms.html">The State's three forms</a></h3>
+<p>Proposition XIII of Apparatus of Capture, the State's forms, set out question by question from the archaic imperial State (the Urstaat) through the evolved States to the modern nation-States (459). Its questions run from regimes of signs and forms of law to what each form does with the war machine.</p>
+<p class="f"><a href="state_forms.html">Web</a><a href="state_forms_handout.pdf">PDF</a></p></li>
+<li><div class="lab mono"><span>[5]</span><span>concepts</span></div>
+<h3><a href="concordance.html">Nomadology's concepts, and how they have moved</a></h3>
+<p>A concordance of the plateaus' concepts (nomos, the war machine, the apparatus of capture, the right of use and others) in plain words, with the field in which each began, where it was worked out before 1980 (CERFI's <i>Recherches</i> of 1972-73, Deleuze's Vincennes seminars of 1979-80), and how it has been taken up since.</p>
+<p class="f"><a href="concordance.html">Web</a><a href="concordance_handout.pdf">PDF</a></p></li>
+<li><div class="lab mono"><span>[6]</span><span>since 1980</span></div>
+<h3><a href="after1980.html">After 1980: what the record does to nomadology's claims</a></h3>
+<p>Claim by claim, the archaeology, anthropology and history since the plateaus that confirm, complicate or dispute them, along with the literatures since 1980 placed on a single scale and the scholarship on nomadology by strand.</p>
+<p class="f"><a href="after1980.html">Web</a><a href="after1980_handout.pdf">PDF</a></p></li>
 </ul>
 
 <h2>Sources</h2>
-<ul>
-<li><span class="t"><a href="library.html">The plateaus' library</a></span>
-<span class="d">The roughly one hundred works cited in Deleuze and Guattari's notes to the two plateaus (552-71), by field from Dumézil's myths and Clastres's ethnography to Childe's archaeology, Braudel's history, Serres on Lucretius, Virilio on speed, and Marx on rent, each with what it gave the plateaus. It also covers the workshop around them: CERFI's <i>Recherches</i> and Deleuze's Vincennes seminars of 1979-80.</span>
-<span class="f"><a href="library.html">Web</a><a href="library_handout.pdf">PDF</a></span></li>
+<ul class="sheets">
+<li class="wide"><div class="lab mono"><span>[7]</span><span>552-71</span></div>
+<h3><a href="library.html">The plateaus' library</a></h3>
+<p>The roughly one hundred works cited in Deleuze and Guattari's notes to the two plateaus (552-71), by field from Dumézil's myths and Clastres's ethnography to Childe's archaeology, Braudel's history, Serres on Lucretius, Virilio on speed, and Marx on rent, each with what it gave the plateaus. It also covers the workshop around them: CERFI's <i>Recherches</i> and Deleuze's Vincennes seminars of 1979-80.</p>
+<p class="f"><a href="library.html">Web</a><a href="library_handout.pdf">PDF</a></p></li>
 </ul>
 
 <h2>Still to come</h2>
-<ul class="soon">
-<li><span class="t">Nomadology, distilled</span><span class="d">A short essay on what the two plateaus argue, as a study of how the State converts what lies outside it.</span></li>
+<ul class="sheets soon">
+<li class="wide"><div class="lab mono"><span>[8]</span><span></span></div>
+<h3>Nomadology, distilled</h3>
+<p>A short essay on what the two plateaus argue, as a study of how the State converts what lies outside it.</p></li>
 </ul>
 
 <footer><p>Companion: <a href="https://minor-science.github.io/thousand-plateaus-reader/">A Thousand Plateaus reader</a>, the two plateaus in French and English, lined up sentence by sentence, with an annotated translation. Source files: <a href="https://github.com/minor-science/nomadology-reference">github.com/minor-science/nomadology-reference</a>.</p></footer>
