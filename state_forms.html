@@ -1,0 +1,117 @@
+<meta charset="utf-8"><title>The State's Forms</title><meta name="claude:viewport-fit-sides" content="cover"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans+Condensed:wght@500;600&display=swap"><style>
+:root { --bg:#F5F6F3; --surface:#FFFFFF; --fg:#1D2224; --muted:#5B6468; --rule:#D5D9D6; --pair:#1F6B66; --pair-soft:#E3EFED;
+  --ext:#7A4E7E; --ext-soft:#F3ECF4; --mar:#8A5A1F; --mar-soft:#F6EEE2; --split:#EEF1EF;
+  --serif:"Source Serif 4", Georgia, "Times New Roman", serif; --label:"IBM Plex Sans Condensed", "Arial Narrow", Arial, sans-serif; }
+
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#141819; --surface:#1B2022; --fg:#E3E7E5; --muted:#9AA4A7; --rule:#2E3538; --pair:#63B9B1; --pair-soft:#1C2C2B; --ext:#C79BCB; --ext-soft:#2A2030; --mar:#D9A55C; --mar-soft:#2A2218; --split:#222829; color-scheme: dark; } }
+:root[data-theme="dark"] { --bg:#141819; --surface:#1B2022; --fg:#E3E7E5; --muted:#9AA4A7; --rule:#2E3538; --pair:#63B9B1; --pair-soft:#1C2C2B; --ext:#C79BCB; --ext-soft:#2A2030; --mar:#D9A55C; --mar-soft:#2A2218; --split:#222829; color-scheme: dark; }
+
+table { border-collapse: collapse; width: 100%; table-layout: fixed; }
+th, td { text-align: left; vertical-align: top; }
+thead th { font-family: var(--label); font-weight: 600; letter-spacing: 0.02em; background: var(--surface); position: relative; z-index: 2; box-shadow: inset 0 -2px 0 var(--fg); }
+thead th small { display: block; font-weight: 500; color: var(--muted); letter-spacing: 0.05em; text-transform: uppercase; }
+thead th.m { background: var(--mar-soft); color: var(--mar); box-shadow: inset 0 -2px 0 var(--mar); }
+.tag { display: inline-block; font-family: var(--label); font-weight: 500; color: var(--mar); border: 1px solid var(--mar); text-transform: uppercase; letter-spacing: 0.04em; }
+tbody th { font-family: var(--label); font-weight: 600; color: var(--muted); }
+tr.row > * { border-top: 1px solid var(--rule); }
+col.mc, td.m { background: var(--mar-soft); }
+td b { font-weight: 600; }
+.pg { color: var(--muted); font-size: 0.88em; }
+td.ext { background: var(--ext-soft); outline: 1.2px dashed var(--ext); font-style: italic; }
+td.none { color: var(--rule); }
+.essay { display: block; font-style: italic; background: var(--ext-soft); outline: 1px dashed var(--ext); }
+.essay::before { content: "Proposed: "; font-style: normal; color: var(--ext); }
+.rec { display: block; font-style: italic; color: var(--fg); background: var(--ext-soft); outline: 1px dashed var(--ext); }
+.rec::before { content: "Record "; font-style: normal; color: var(--ext); }
+.rid { font-family: var(--label); font-style: normal; color: var(--ext); }
+dl.key { margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 8px 22px; }
+dl.key dt { font-family: var(--label); font-weight: 600; }
+dl.key dd { margin: 0; color: var(--muted); }
+.split { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--rule); background: var(--split); }
+.split > div { min-width: 0; }
+.split > div + div { border-left: 1px solid var(--rule); }
+.mut { color: var(--muted); font-style: italic; }
+.seg { display: flex; }
+.seg i { flex: 1; border-top: 2px solid var(--pair); }
+.seg i.l { border-left: 2px solid var(--pair); }
+.seg i.r { border-right: 2px solid var(--pair); }
+.seg i.skip { border-top: 2px dotted var(--pair); opacity: 0.55; }
+.seg.ext i { border-color: var(--ext); border-top-style: dashed; }
+.seg.mk i { border-color: var(--mar); }
+p.bt { color: var(--pair); }
+p.bt.ext { color: var(--ext); }
+p.bt.mk { color: var(--mar); }
+tr.transfer > * { border-top: 2px solid var(--fg); background: var(--pair-soft); }
+.tm { display: block; color: var(--mar); }
+
+body { background: var(--bg); color: var(--fg); font-family: var(--serif); font-size: 15px; line-height: 1.45;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 28px 40px; }
+header { max-width: 78ch; display: grid; gap: 10px; margin-bottom: 16px; }
+h1 { font-size: 1.7rem; font-weight: 600; margin: 0; text-wrap: balance; }
+header p { margin: 0; color: var(--muted); }
+header p b { color: var(--fg); }
+header p.mnote { color: var(--fg); border-left: 3px solid var(--mar); padding-left: 12px; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 20px; font-family: var(--label); font-size: 0.85rem; color: var(--muted); margin: 4px 0 16px; }
+.legend span { display: inline-flex; align-items: center; gap: 8px; }
+.sw { display: inline-block; }
+.sw-p { width: 26px; height: 9px; border: 2px solid var(--pair); border-bottom: 0; }
+.sw-m { width: 26px; height: 9px; border: 2px solid var(--mar); border-bottom: 0; }
+.sw-e { width: 18px; height: 14px; border: 1.5px dashed var(--ext); background: var(--ext-soft); }
+.sw-s { width: 26px; height: 14px; border: 1px solid var(--rule); background: linear-gradient(90deg, var(--split) 0 48%, var(--rule) 48% 52%, var(--split) 52%); }
+.wrap { overflow-x: auto; border: 1px solid var(--rule); background: var(--surface); }
+table { min-width: 1180px; }
+.six table { min-width: 1360px; }
+col.q { width: 140px; }
+th, td { padding: 10px 12px; }
+thead th { font-size: 0.95rem; }
+thead th small { font-size: 0.72rem; margin-top: 2px; }
+.tag { margin-top: 6px; font-size: 0.68rem; padding: 1px 6px; }
+tbody th { font-size: 0.85rem; }
+td.ext { outline-offset: -5px; }
+.essay, .rec { margin-top: 8px; padding: 6px 8px; }
+.split > div { padding: 6px 8px; font-size: 0.93rem; }
+.mut { margin-top: 6px; font-size: 0.9rem; }
+tr.band td { padding: 0 12px 10px; }
+.seg { height: 9px; margin: 0 4px; }
+p.bt { margin: 4px 4px 0; font-size: 0.88rem; }
+tr.transfer > * { padding: 12px; }
+.tm { margin-top: 6px; }
+.keysec { margin-top: 26px; max-width: 1200px; }
+.keysec h2 { font-family: var(--label); font-size: 1.05rem; margin: 0 0 4px; }
+.keysec p { margin: 0 0 12px; color: var(--muted); }
+dl.key dd { font-size: 0.92rem; }
+footer { max-width: 78ch; margin-top: 18px; color: var(--muted); font-size: 0.88rem; display: grid; gap: 8px; }
+footer p { margin: 0; }
+
+table.cc tbody th small, table.sf thead th small { display: block; }
+table.cc tbody th small { font-weight: 500; color: var(--muted); }
+td.wk { background: var(--pair-soft); }
+td.dr { background: var(--ext-soft); font-style: italic; }
+table.gv td.st { background: var(--pair-soft); }
+table.gv td.pp { font-family: var(--label); color: var(--muted); }
+.poles3 { display: grid; grid-template-columns: auto 1fr 1fr 1fr; border: 1px solid var(--rule); background: var(--split); }
+.poles3 > * { padding: 4px 8px; }
+.poles3 > * + * { border-left: 1px solid var(--rule); }
+.plab { font-family: var(--label); font-weight: 600; color: var(--muted); }
+.lib { columns: 3; column-gap: 22px; }
+.fld { break-inside: avoid-column; margin-bottom: 10px; }
+.fld h2 { font-family: var(--label); font-weight: 600; margin: 0 0 3px; color: var(--pair); border-bottom: 1px solid var(--pair); }
+.fld h2 small { color: var(--muted); font-weight: 500; }
+.fld ul { list-style: none; margin: 0; padding: 0; }
+.fld li { margin-bottom: 3px; }
+.src { font-weight: 600; }
+table.ws { width: 100%; border-collapse: collapse; margin-bottom: 8px; }
+table.ws th, table.ws td { border: 1px solid var(--rule); padding: 3px 6px; text-align: left; vertical-align: top; }
+table.ws thead th { font-family: var(--label); background: var(--surface); }
+table.ws td.pp { font-family: var(--label); color: var(--muted); white-space: nowrap; }
+b.ag, .ag { font-family: var(--label); font-weight: 600; color: var(--ext); border: 1px dashed var(--ext); background: var(--ext-soft); padding: 0 3px; text-transform: uppercase; font-size: 0.8em; letter-spacing: 0.03em; }
+
+.wrap table { min-width: 1100px; }
+col.q { width: 150px; }
+table.cc col.c1 { width: 170px; }
+.poles3 { margin-top: 12px; font-size: 0.92rem; }
+.lib { font-size: 0.92rem; }
+@media (max-width: 900px) { .lib { columns: 1; } }
+h2.sec { font-family: var(--label); font-size: 1.15rem; margin: 30px 0 6px; }
+p.secp { margin: 0 0 12px; color: var(--muted); max-width: 78ch; }
+</style><header><h1>The State's three forms</h1><p>Deleuze and Guattari distinguish "three major forms" of the State (459). In fact, they are not stages, since each form is in "resonance" with the others, and all of them "exhibit a unity of composition in spite of their differences in organization and development" (459). The sheet opens the single column that <i>The five machinic processes</i> gives to capture. Brackets join the forms where Deleuze and Guattari set out a relation between them.</p></header><div class="wrap"><table class="sf"><colgroup><col class="q"><col><col><col></colgroup><thead><tr><th>Question</th><th>The archaic empire<small>Marx's "Asiatic formation"</small></th><th>Evolved States<small>empires, cities, feudal systems, monarchies</small></th><th>Nation-States<small>models of realization of the axiomatic</small></th></tr></thead><tbody><tr class="row"><th>Where is it found?</th><td>Egypt, Mesopotamia, the Indus valley, China, and "not only in Asia, but also in Africa, America, Greece, Rome" <span class="pg">427, 450</span></td><td>Rome's empire (with its consilium and fiscus), the Aegean cities, feudal systems, and absolute monarchy <span class="pg">451-52, 459</span></td><td>Modern nation-States of every kind (democratic, totalitarian, liberal, tyrannical), as well as the bureaucratic socialist States <span class="pg">455-56, 459</span></td></tr><tr class="row"><th>What does it do with flows?</th><td>It <b>overcodes</b> flows already coded by the communities it rules <span class="pg">427-28, 459</span></td><td>It organizes "qualified or topical conjunctions of decoded flows" <span class="pg">451, 459</span></td><td>It realizes "a general conjugation of flows," the capitalist axiomatic <span class="pg">454-55, 459</span></td></tr><tr class="row"><th>What is its regime of signs?</th><td>Overcoding, "or the Signifier" <span class="pg">428</span></td><td>Processes of <b>subjectification</b> <span class="pg">451</span></td><td>The <b>axiomatic</b>, which deals "directly with purely functional elements and relations" <span class="pg">454</span></td></tr><tr class="row"><th>What binds people?</th><td>The nexum, "the objective, imperial collective bond" <span class="pg">428, 460</span></td><td>Personal bonds, whether contracts between owners or conventions between the owned and their owners <span class="pg">451</span></td><td>"The Subject that binds itself," a contract "between self and self" <span class="pg">460</span></td></tr><tr class="band"><td></td><td colspan="3" class="bandcell"><div class="seg"><i class="l"></i><i class="skip"></i><i class="r"></i></div><p class="bt"><b>One moment</b> of the State through all its forms: "capture, bond, knot, nexum, magical capture" <span class="pg">460</span></p></td></tr><tr class="row"><th>What becomes of property?</th><td>Everything is public, with the despot as "the sole and transcendent public-property owner" and land that cannot be sold <span class="pg">428</span></td><td>The public sphere becomes "the shared means for a now private appropriation" <span class="pg">451</span></td><td>Property is in "convertible abstract rights," and capital is itself "a right" <span class="pg">453-54</span></td></tr><tr class="row"><th>What is the form of its law?</th><td>"The overcoding of customs" <span class="pg">453</span></td><td>"A set of topics," subjective and conjunctive (Roman law, cf. Veyne) <span class="pg">451, 453</span></td><td>The form of an axiomatic, as in the French civil code (cf. Ray) <span class="pg">453</span></td></tr><tr class="row"><th>How are persons captured?</th><td>Machinic <b>enslavement</b>, "generalized slavery" in the megamachine (cf. Mumford) <span class="pg">428, 457</span></td><td><b>Subjection</b>: ancient slavery and feudal serfdom were already "procedures of subjection" <span class="pg">457</span></td><td>Social subjection of the "naked" or "free" worker, joined by a new enslavement in cybernetic "humans-machines systems" <span class="pg">457-58</span></td></tr><tr class="band"><td></td><td colspan="3" class="bandcell"><div class="seg"><i class="l"></i><i class=""></i><i class="r"></i></div><p class="bt">"A small amount of subjectification took us away from machinic enslavement, but a large amount brings us back to it" <span class="pg">458</span></p></td></tr><tr class="row"><th>What kind of surplus value?</th><td>Surplus value "of code" <span class="pg">451</span></td><td>Surplus value "of flow," first among the Aegean merchants and smiths <span class="pg">450-51</span></td><td>Surplus value that "becomes machinic" with automation <span class="pg">458</span></td></tr><tr class="row"><th>What does it do with the war machine?</th><td>It has none of its own, working instead through police and prisons while encasting warriors captured from outside <span class="pg">418, 425</span></td><td>Appropriation proper, as in the hoplite reform's army of citizen-soldiers <span class="pg">419, 426</span></td><td>Total war, then a worldwide war machine "of which they are no longer anything more than the opposable or apposed parts" <span class="pg">421, 466-67</span></td></tr><tr class="row"><th>How diverse is it?</th><td>"Little diversity, due to a certain formal immutability" <span class="pg">459</span></td><td>"Extremely diverse" <span class="pg">459</span></td><td>A diversity that is "a function of isomorphy," and of heteromorphy or polymorphy <span class="pg">459, 464-66</span></td></tr><tr class="row"><th>What escapes it?</th><td>Decoded flows of labor and money, and private property "slipping through the net," carried by "the collective figure of the Outsider" (freed slaves, cf. T&#246;kei) <span class="pg">449</span></td><td>Decoded flows that "draw capitalism in negative outline" but are not let "stream together" <span class="pg">452</span></td><td>Minorities as nondenumerable sets, and "undecidable propositions" <span class="pg">470-73</span></td></tr><tr class="band"><td></td><td colspan="2" class="bandcell"><div class="seg"><i class="l"></i><i class="r"></i></div><p class="bt">The Aegean "presuppose[s]" the oriental stock, and "there is always an empire on the horizon" <span class="pg">459-60</span></p></td><td></td></tr><tr class="band"><td></td><td></td><td colspan="2" class="bandcell"><div class="seg"><i class="l"></i><i class="r"></i></div><p class="bt">"Capitalism was continually being born, disappearing and reviving at every crossroads of history" <span class="pg">460</span></p></td></tr><tr class="transfer"><th>How do the forms meet?</th><td colspan="3">"Capitalism has reawakened the Urstaat, and given it new strength." The modern States "restore the most absolute of empires, a new 'megamachine,' whatever the novelty or timeliness of its now immanent form" <span class="pg">460</span></td></tr></tbody></table></div><h2 class="sec">The axiomatic today: seven givens</h2><p class="secp">In the present, as D&G see it, "capitalism and present-day politics are an axiomatic in the literal sense," which is why "nothing is played out in advance" (461). They set out "a summary sketch of the 'givens'" in seven parts. The last column records where, by their own account, struggle enters.</p><div class="wrap"><table class="gv"><colgroup><col class="g1"><col class="g2"><col class="g3"><col class="g4"></colgroup><thead><tr><th>Given</th><th>ATP</th><th>What Deleuze and Guattari say</th><th>Where struggle enters</th></tr></thead><tbody><tr class="row"><th>1. Addition, subtraction</th><td class="pp">461-63</td><td>Axioms are "operative statements." Social democracy adds them (Keynes and the New Deal as "axiom laboratories"), totalitarianism subtracts them, as in "the minimum State of anarcho-capitalism (cf. Chile)"</td><td class="st">"It would be an error to take a disinterested stance toward struggle on the level of the axioms" <span class="pg">463</span></td></tr><tr class="row"><th>2. Saturation</th><td class="pp">463-64</td><td>Capitalism "has no laws but immanent ones." It confronts its own limits and displaces them at once (oil, nuclear power)</td><td class="st">Local struggles must "directly target national and international axioms, at the precise point of their insertion" <span class="pg">464</span></td></tr><tr class="row"><th>3. Models, isomorphy</th><td class="pp">464-66</td><td>All States are models of realization: isomorphic at the center, heteromorphic in the socialist East, polymorphic at the periphery</td><td class="st">It "would be absurd" to think popular movements condemned in advance, or all States "equivalent and homogeneous" <span class="pg">466</span></td></tr><tr class="row"><th>4. Power</th><td class="pp">466-67</td><td>A "power of the continuum" in the military-industrial complexes, where "peace ... technologically frees the unlimited material process of total war"</td><td class="st">The same capital "continually recreate[s] unexpected possibilities for counterattack" <span class="pg">422</span></td></tr><tr class="row"><th>5. The included middle</th><td class="pp">468-69</td><td>The center needs a periphery, and "internal Third Worlds" rise inside the center, with labor split between intensive surplus labor and "erratic" work</td><td class="st">Negri's "internal margin," which "tends increasingly to merge the students with the emarginati" <span class="pg">469</span></td></tr><tr class="row"><th>6. Minorities</th><td class="pp">469-71</td><td>Minorities are nondenumerable sets, which States answer by "translating the minorities into denumerable sets or subsets"</td><td class="st">The demand "to formulate their problems themselves" is what the axiomatic "cannot tolerate" <span class="pg">471</span></td></tr><tr class="row"><th>7. Undecidable propositions</th><td class="pp">471-73</td><td>Not "the uncertainty of the results" but "the coexistence and inseparability" of what the system conjugates and what escapes it</td><td class="st">"The germ and locus par excellence of revolutionary decisions" <span class="pg">473</span></td></tr></tbody></table><div class="poles3"><span class="plab">Poles of the capitalist State</span><div><b>Social democracy</b> Adds axioms by organizing a domestic market and multiplying "directing axioms" <span class="pg">462</span></div><div><b>Totalitarianism</b> Subtracts axioms and promotes the foreign sector, "the minimum State," with the population "a consequence" <span class="pg">462</span></div><div><b>Fascism</b> A war economy and "a multiplication by subtraction," a "suicidal" State more than a totalitarian one (cf. Virilio) <span class="pg">462-63, 467</span></div></div></div><footer><p>Page numbers refer to the Minnesota translation of <i>A Thousand Plateaus</i> (1987). Bold type marks the two terms of a contrast. Brackets mark relations between the forms, dotted where they pass over a column. The three forms are worked out at length in the 1979-80 seminar, sessions 2 and 6-8, and the axiomatic in sessions 8-13 (listed on the back page of the library sheet).</p></footer>
