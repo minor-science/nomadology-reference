@@ -443,13 +443,15 @@ W_INTRO = ('Much of the two plateaus was worked out aloud first, in the 1979-80 
 W_FOOT = ('Seminar transcripts and translations: The Deleuze Seminars (Purdue), 1979-80 trans. Kerslake and Stivale. A revised edition of the 1979-80 seminar is Lapoujade, ed., <i>Sur l\'appareil d\'État et la machine de guerre</i> (Minuit, 2025). Pages are those of the Minnesota translation of ATP.')
 
 
-def workshop_html():
+def workshop_html(web=False):
     rows = "".join(f'<tr><th>{n}</th><td class="pp">{d}</td><td>{fmt(t)}</td><td class="pp">{pp}</td></tr>' for n, d, t, pp in SESSIONS)
     table = f'<table class="ws"><colgroup><col class="w1"><col class="w2"><col class="w3"><col class="w4"></colgroup><thead><tr><th>Session</th><th>Date</th><th>What it works out</th><th>ATP</th></tr></thead><tbody>{rows}</tbody></table>'
     out = []
     for field, items in WORKSHOP:
         lis = "".join(f'<li><span class="src">{s}</span> {fmt(w)} <span class="pg">{pp}</span></li>' for s, w, pp in items)
         out.append(f'<section class="fld"><h2>{field} <small>{len(items)}</small></h2><ul>{lis}</ul></section>')
+    if web:  # on screen the session table scrolls in its own box instead of widening the page
+        table = f'<div class="wrap">{table}</div>'
     return table + f'<div class="lib ws2">{"".join(out)}</div>'
 
 
@@ -566,7 +568,7 @@ def main():
     save("library_handout.html", handout("Nomadology Bibliography", [
         page("lb1", "Nomadology bibliography", "Sources of plateaus 12-13 · front", L_INTRO, library_html(), L_FOOT),
         page("lb1", "The workshop around the plateaus", "Library · back", W_INTRO, workshop_html(), W_FOOT)]))
-    save("library.html", web("Nomadology Bibliography", "Nomadology bibliography", [("", L_INTRO, library_html()), ("The workshop around the plateaus", W_INTRO, workshop_html())], L_FOOT + " " + W_FOOT))
+    save("library.html", web("Nomadology Bibliography", "Nomadology bibliography", [("", L_INTRO, library_html()), ("The workshop around the plateaus", W_INTRO, workshop_html(web=True))], L_FOOT + " " + W_FOOT))
     open(os.path.join(HERE, "reference_sheets_text.md"), "w").write(text_dump() + "\n")
     n = sum(len(i) for _, i in LIBRARY)
     print(f"wrote concordance, state forms, library ({n} library entries, {len(CONCEPTS)} concepts)")

@@ -30,7 +30,6 @@
 - [Minor science](https://minor-science.github.io/): all the projects
 - [Nomadology Visualizer](https://nomad-viz.vercel.app/): physical simulations of the plateaus' processes
 - [Nomadology reference](https://minor-science.github.io/nomadology-reference/): reference sheets on plateaus 12 and 13
-- [A Thousand Plateaus reader](https://minor-science.github.io/thousand-plateaus-reader/reader.html): French and English, sentence by sentence
 - [Source code](https://github.com/minor-science): GitHub organization
 - [Andrew Culp](https://andrewculp.org/): author
 - [an.archeology](https://www.instagram.com/an.archeology/): the author's current project, depicting Anarcheology of Power
