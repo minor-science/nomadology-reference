@@ -56,7 +56,7 @@ Mayshar and colleagues put appropriability before surplus (2022, 1092), though t
 
 Sterelny's storage threshold (RoV 98)
 
-What capture does this store reveal?
+When something is stored, is it a reserve kept in common, or a stock drawn toward a single interest?
 
 Indus cities had writing, weights, seals, and metallurgy without palaces (Green 154). Cities served as refuges, with nomadism produced by urban flight (Yoffee 60)
 

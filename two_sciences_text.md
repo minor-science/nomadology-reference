@@ -106,7 +106,7 @@ Will on Corinth: money came from taxation, not trade (442)
 
 Did storage cause inequality?
 
-What capture does this store reveal?
+When something is stored, is it a reserve kept in common, or a stock drawn toward a single interest?
 
 Ingold: a stock is rights converging "upon a single interest"
 
@@ -118,7 +118,7 @@ Lévi-Strauss: one village, two potentials, segmentary or hierarchized (433)
 
 Is this a State society or not?
 
-Which processes are at work, and which one sets the tone?
+Which processes coexist in a formation, and which one do the others serve?
 
 Green: Indus cities with writing and weights but no palaces
 
@@ -130,7 +130,7 @@ Lindner: a nomadic tribe made by recruitment and defection, not descent
 
 Who lived free of the State?
 
-Where does the border with this State run, and where does it give way?
+What relations take a form that no State can make interior, even inside its borders?
 
 Casimir: cultivators who stopped being the plantation's workers without leaving it
 
@@ -148,25 +148,25 @@ Sabi Abyad: sealings from stores shared "probably along egalitarian lines" (Fran
 
 How many escaped?
 
-What in this escape cannot be counted as a set?
+What does a flight keep uncountable on purpose, and what can no count of it decide?
 
 Price: Saramaka history kept restricted and in fragments
 
 What do the data show?
 
-What was set aside as noise so that the data could be compared?
+What was set aside as noise so that a record could be compared, and what would following it show?
 
 Moreno García and Richardson: royal measure without a royal science
 
 What constants can we extract?
 
-What did this practice follow, and can our method follow it too?
+Does a practice watch the flow from the bank or follow it, and which does research do?
 
 Carney and Rosomoff: maroon smithies on a 1769 map
 
 Was this knowledge accurate?
 
-What kind of rigor does it have?
+What makes a knowledge rigorous when it is not exact, like roundness rather than the circle?
 
 Bilby: "Maroon Science," learned through "testing and evasion"
 
@@ -178,7 +178,7 @@ Simondon: splitting wood along its fibers
 
 Who designed this?
 
-What division of labor does this knowledge assume?
+Whom does a knowledge assume will think and whom will work, and what is lost when the two are split?
 
 The Gothic journeymen against the architect's plane on paper (368)
 
@@ -196,7 +196,7 @@ Garfinkle and Richardson: violence "rare in fact," with reputation and exclusion
 
 Was this resistance or destruction?
 
-Does this line create new relations, or does it only destroy?
+When a flight breaks with an order, does it make new relations, or only abolish the old ones?
 
 Munkh-Erdene: the warband of a warlord as the "nomadic origin of the state"
 
