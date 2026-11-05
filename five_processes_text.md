@@ -214,7 +214,7 @@ Studies of hunter-gatherers suggest that setting food aside does not yet make a 
 
 In ancient Egypt and Babylonia, fields were measured by a dozen kinds of officer with no fixed competence, which is to say royal measure without a royal science (Moreno García and Richardson).
 
-In Middle Bronze Age Mesopotamia, violence by State and community was “rare in fact,” as people were sanctioned instead through reputation and exclusion, a regime missing from Deleuze and Guattari’s four (Garfinkle and Richardson).
+In Middle Bronze Age Mesopotamia, violence by State and community was “rare in fact,” with sanction running instead through reputation and exclusion, a regime missing from Deleuze and Guattari’s four (Garfinkle and Richardson).
 
 Old Babylonian law (about 1900-1600 BCE) treated a slave’s flight as theft by whoever helped, not as the fugitive’s own act (Richardson). Even whether flight counts as the fugitive’s act, then, depends on the regime.
 

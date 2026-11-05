@@ -34,7 +34,7 @@ Resisting extraction pushed Tongan communities to stress women's reproductive ro
 
 Boehm's "reverse dominance hierarchy" and Sterelny, both in Protevi (RoV 98), turn the operation into an evolved disposition
 
-Warding off has internal costs. Who bears them?
+Warding off takes work. Whose work is it?
 
 Early states were "more aspirational than operational" yet "presumptive of an integrated sovereign authority" (Richardson 2012, 4). Kings co-opted local powers they could not erase (Moreno García and Richardson 6)
 

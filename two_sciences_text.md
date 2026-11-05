@@ -92,7 +92,7 @@ In ancient Egypt and Babylonia, fields were measured by a dozen kinds of officer
 
 Even following can be enlisted by the State. Tracking, which Louis Liebenberg presents as the origin of science among Kalahari hunters, is today the craft of the Shadow Wolves, a United States border unit of Native American trackers.
 
-On a 1769 militia map of a runaway settlement in Minas Gerais, Brazil, the smithies and gardens are marked beside the hidden defenses and "holes for escape" (Carney and Rosomoff, 85).
+On a 1769 militia map of a runaway community in Minas Gerais, Brazil, the smithies and gardens are marked beside the hidden defenses and "holes for escape" (Carney and Rosomoff, 85).
 
 More telling still, the Indus cities had standard weights, seals, and writing but no palaces or royal tombs (Green), so that a fixed measure need not belong to a ruler.
 
@@ -100,7 +100,7 @@ Although it is often taken for a thing of the past, minor science still has prac
 
 How did the State originate?
 
-What does this capture make, and then claim to have found already there?
+For (allegedly) self-founding forms of power, what did they convert to look that way?
 
 Will on Corinth: money came from taxation, not trade (442)
 
@@ -112,7 +112,7 @@ Ingold: a stock is rights converging "upon a single interest"
 
 Which came first?
 
-What is warded off and anticipated here, and at what threshold would it take on consistency?
+How does a balance of forces sense possible changes in kind, and how is such a change prevented or precipitated?
 
 Lévi-Strauss: one village, two potentials, segmentary or hierarchized (433)
 
@@ -122,6 +122,12 @@ Which processes are at work, and which one sets the tone?
 
 Green: Indus cities with writing and weights but no palaces
 
+Which peoples were really nomads?
+
+Without a power above to constitute it as a people, how does a way of life thicken its consistency enough to hold together?
+
+Lindner: a nomadic tribe made by recruitment and defection, not descent
+
 Who lived free of the State?
 
 Where does the border with this State run, and where does it give way?
@@ -130,13 +136,13 @@ Casimir: cultivators who stopped being the plantation's workers without leaving 
 
 How mobile were they?
 
-What did they occupy without dividing or counting it?
+How is a space inhabited without settling in the midst of what would divide it, and how does it stay undivided while open to the outside?
 
 Humphrey and Sneath prefer "mobile pastoralism," yet movement is not what defines the nomad (381)
 
 How was the population counted?
 
-Does this count compose a body that moves, or record a resource?
+For a composed body, how is it counted: as a sequence on the move, or as shares of a whole?
 
 Sabi Abyad: sealings from stores shared "probably along egalitarian lines" (Frangipane)
 
@@ -166,7 +172,7 @@ Bilby: "Maroon Science," learned through "testing and evasion"
 
 What form was imposed?
 
-What tendencies in the material were followed?
+When a form is imposed from outside, what is presumed incapable of organizing itself, and what would following the grain of the material do instead?
 
 Simondon: splitting wood along its fibers
 
@@ -178,9 +184,15 @@ The Gothic journeymen against the architect's plane on paper (368)
 
 What is the solution?
 
-Who gets to pose the problem, and what remains undecidable once it is posed?
+As operating rules are added or removed, what of a fuzzy multiplicity do they contain, and what evades them?
 
 Hudson: each royal debt cancellation as an axiom added to keep an order running
+
+Were they warlike?
+
+How does a power present its own violence, and what does it make of the violence of others?
+
+Garfinkle and Richardson: violence "rare in fact," with reputation and exclusion doing the work
 
 Was this resistance or destruction?
 
@@ -200,9 +212,13 @@ Engineers and mathematicians whom Deleuze and Guattari place on the borderline, 
 
 Marcella Frangipane, an archaeologist, describes the clay sealings of the "burnt village" at Sabi Abyad in northern Syria, some eight thousand years old, as records of stores shared "probably along egalitarian lines" (2018).
 
+For Middle Bronze Age Mesopotamia (about 2000-1600 BCE), the historians Steven Garfinkle and Seth Richardson find State and community violence “rare in fact,” with sanction running instead through reputation and exclusion (161).
+
 Michael Hudson, an economic historian, reconstructs the royal cancellations of agrarian debt in the ancient Near East, the "clean slates" (2002).
 
 In *The Art of Tracking: The Origin of Science* (1990), Louis Liebenberg studies Kalahari trackers. Today, the Shadow Wolves are a unit of Native American trackers working for United States immigration enforcement on the Tohono O'odham Nation in Arizona.
+
+In "What Was a Nomadic Tribe?" (1982), the historian Rudi Paul Lindner shows that a nomadic tribe was made by recruitment and defection, not by descent (690, 697).
 
 Anne Querrien, the CERFI sociologist whose work on State engineering gives Deleuze and Guattari the Gothic cathedrals and the bridges of the Ponts et Chaussées (364-66).
 
