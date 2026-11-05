@@ -10,7 +10,7 @@ Ancient DNA and isotopes measure displacement, which is migration, not holding (
 
 Sneath attacks the egalitarian nomad as a trope and finds aristocracies on the steppe (*The Headless State* 3-4, 198-99)
 
-What evidence could register holding a space, as opposed to crossing it?
+What evidence could register inhabiting a place without settling it, as opposed to crossing it?
 
 The colonial grading of flight as a numbered number, used to set punishments (Thompson 53)
 
@@ -80,7 +80,7 @@ Saramaka history is kept restricted and "told in fragments," with experts "on a 
 
 Ritual knowledge escapes demand sharing (Peterson 868) and founds hierarchy without a State (Myers 220-21). Kromanti ceremonies are performed for tourists (Bilby 14)
 
-Restricted knowledge both founds hierarchy and shields people against capture. Who holds the measure of access?
+Restricted knowledge both founds hierarchy and shields those who keep it against capture. Who holds the measure of access?
 
 The campo negro ("black countryside"), a formation "inside slavery and an alternative to it" (Gomes 282). Three processes in one swamp (Sayers 105-08)
 

@@ -72,7 +72,7 @@ Smooth: occupied without being counted (steppe, desert, sea), where points serve
 
 “Neither ‘smooth’ nor ‘striated’” but “secluded or marginal,” with ambush points and hidden defenses (RoV 104, 120)
 
-Holey space: a 1769 map of a Brazilian runaway settlement, with smithies and “holes for escape” (Carney and Rosomoff)
+Holey space: a 1769 map of a Brazilian runaway community, with smithies and “holes for escape” (Carney and Rosomoff)
 
 Striated: counted in order to be occupied (survey grids, the land register), with the center “on top,” and migrants controlled (362, 385, 433)
 
@@ -122,7 +122,7 @@ Free action and the weapon (bow, lance), following the phylum (the smith, cf. Ch
 
 Hunting and swidden “adapted to … the risk of attack” (RoV 117)
 
-Maroon farming and smithing in Brazilian runaway settlements (Carney and Rosomoff)
+Maroon farming and smithing in Brazilian runaway communities (Carney and Rosomoff)
 
 Work and the tool (the plow, the daily quota), and hylomorphism, form imposed on matter (the mold, cf. Simondon) (369, 397-98, 408)
 
@@ -176,7 +176,7 @@ Enslavement across societies: the Atlantic slave system
 
 Treaty maroons “assist in pursuit, capture, and return” (RoV 117)
 
-Wards off the State and the town (dispersal, sharing) (431-33)
+Wards off the State and the town, or any change past its limit (dispersal, sharing) (431-33)
 
 Wards off lineal aristocracy, imperial functionaries (393)
 
@@ -226,7 +226,7 @@ Smooth and striated space come from the composer Pierre Boulez, who distinguishe
 
 Fernand Braudel describes the State and the town as “two runners” in the history of European capitalism, an image Deleuze and Guattari quote (434).
 
-In *In the Shadow of Slavery* (2009), the geographers Judith Carney and Richard Rosomoff reproduce a 1769 militia map of a runaway settlement in Minas Gerais, Brazil, marking its smithies, gardens, hidden defenses, and “holes for escape” (85).
+In *In the Shadow of Slavery* (2009), the geographers Judith Carney and Richard Rosomoff reproduce a 1769 militia map of a runaway community in Minas Gerais, Brazil, marking its smithies and gardens beside hidden defenses and “holes for escape” (85).
 
 The Haitian historian Jean Casimir shows in *The Haitians* (2020) how cultivators after the revolution built a “counter-plantation” of family farms and, “without moving from the plantations,” stopped being the plantation’s workers (142), a book Protevi also cites (RoV 104).
 
@@ -246,7 +246,7 @@ For Middle Bronze Age Mesopotamia (about 2000-1600 BCE), the historians Steven G
 
 The Martinican writer Édouard Glissant, among the Caribbean writers Protevi cites, takes the maroon as a figure of resistance (RoV 121).
 
-Quilombos are Brazil’s runaway settlements. The historian Flávio dos Santos Gomes calls the networks tying them to slave quarters, the free poor, and traders a *campo negro*, a formation “inside slavery and an alternative to it.”
+Quilombos are Brazil’s runaway communities. The historian Flávio dos Santos Gomes calls the networks tying them to slave quarters, the free poor, and traders a *campo negro*, a formation “inside slavery and an alternative to it.”
 
 In “Killing the Priest-King” (2021), the archaeologist Adam Green describes Indus cities (about 2600-1900 BCE) with writing, standard weights, seals, and metalwork, yet no palaces or royal tombs.
 

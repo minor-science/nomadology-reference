@@ -94,9 +94,9 @@ Even following can be enlisted by the State. Tracking, which Louis Liebenberg pr
 
 On a 1769 militia map of a runaway community in Minas Gerais, Brazil, the smithies and gardens are marked beside the hidden defenses and "holes for escape" (Carney and Rosomoff, 85).
 
-More telling still, the Indus cities had standard weights, seals, and writing but no palaces or royal tombs (Green), so that a fixed measure need not belong to a ruler.
+More telling still, the Indus cities had standard weights, seals, and writing but no palaces or royal tombs (Green), so that a fixed measure need not belong to a palace.
 
-Although it is often taken for a thing of the past, minor science still has practitioners. The Jamaican Maroons learn their "Maroon Science" through "testing and evasion" (Bilby), and the Saramaka of Suriname keep the history of their war against the planters restricted and in fragments (Price).
+Although it is often taken for a thing of the past, minor science still has practitioners. The Jamaican Maroons learn their "Maroon Science" through "testing and evasion" (Bilby), while the Saramaka of Suriname keep the history of their war against the planters restricted and in fragments (Price).
 
 How did the State originate?
 
