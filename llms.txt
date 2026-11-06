@@ -5,6 +5,7 @@
 ## Pages
 
 - [Nomadology reference: sheets on A Thousand Plateaus, plateaus 12 and 13](https://minor-science.github.io/nomadology-reference/): Reference sheets on plateaus 12 and 13 of Deleuze and Guattari's A Thousand Plateaus: the Treatise on Nomadology and the Apparatus of Capture.
+- [Where the name nomadology came from, and what else it could be called](https://minor-science.github.io/nomadology-reference/name.html): How Deleuze and Guattari built the word: "nomad-" from the Greek root nem-, through Laroche, Difference and Repetition and The Logic of Sense, and "-ology" from Leibniz's Monadology, with the word's first appearances in 1980 and its later life. On the back, approaches outside their orbit that come close (Foucault's pastoral power, Scott, Trouillot, Wolf, Graeber and Wengrow, studies of pastoral nomads), then names already in use and new ones to weigh.
 - [Treatise on Nomadology and Apparatus of Capture, entry by entry](https://minor-science.github.io/nomadology-reference/plateaus_reference.html): Every axiom, proposition and problem of plateaus 12 and 13 of A Thousand Plateaus, with its claims, contrasts and definitions by page. Searchable, with the quotations.
 - [Plateaus 12-13 beat sheet: A Thousand Plateaus, entry by entry](https://minor-science.github.io/nomadology-reference/plateaus_beat_sheet.html): A printable index of the Treatise on Nomadology and Apparatus of Capture: each axiom, proposition and problem of A Thousand Plateaus, plateaus 12 and 13, by page.
 - [The five machinic processes in A Thousand Plateaus](https://minor-science.github.io/nomadology-reference/five_processes.html): Deleuze and Guattari's five machinic processes (prevention-anticipation, war machines, apparatuses of capture, polarization in towns, ecumenical organization), A Thousand Plateaus 430-37.
@@ -13,18 +14,17 @@
 - [The State's three forms in A Thousand Plateaus](https://minor-science.github.io/nomadology-reference/state_forms.html): Proposition XIII of Apparatus of Capture (459): the archaic imperial State or Urstaat, the evolved States and the modern nation-States, set out question by question.
 - [Nomadology concepts: where they came from and how they were taken up](https://minor-science.github.io/nomadology-reference/concordance.html): A concordance of the concepts of A Thousand Plateaus, plateaus 12-13 (nomos, the war machine, the apparatus of capture): where each began, CERFI and the Vincennes seminars, and later uptake.
 - [After 1980: what later research says about nomadology](https://minor-science.github.io/nomadology-reference/after1980.html): Claim by claim, the archaeology, anthropology and history since A Thousand Plateaus (1980) that confirm, complicate or dispute the claims of its nomadology plateaus.
-- [Where the name nomadology came from, and what else it could be called](https://minor-science.github.io/nomadology-reference/name.html): How Deleuze and Guattari built the word: "nomad-" from the Greek root nem-, through Laroche, Difference and Repetition and The Logic of Sense, and "-ology" from Leibniz's Monadology, with the word's first appearances in 1980 and its later life. On the back, approaches outside their orbit that come close (Foucault's pastoral power, Scott, Trouillot, Wolf, Graeber and Wengrow, studies of pastoral nomads), then names already in use and new ones to weigh.
 - [Nomadology bibliography: works cited in the Treatise on Nomadology and Apparatus of Capture](https://minor-science.github.io/nomadology-reference/library.html): About one hundred works Deleuze and Guattari cite in A Thousand Plateaus, plateaus 12-13 (Dumézil, Clastres, Childe, Braudel, Serres, Virilio, Marx), with what each contributed to the plateaus.
 
 ## PDFs
 
+- [Where the name nomadology came from, and what else it could be called (PDF)](https://minor-science.github.io/nomadology-reference/name_handout.pdf)
 - [Plateaus 12-13 beat sheet: A Thousand Plateaus, entry by entry (PDF)](https://minor-science.github.io/nomadology-reference/plateaus_beat_sheet.pdf)
 - [The five machinic processes in A Thousand Plateaus (PDF)](https://minor-science.github.io/nomadology-reference/five_processes_handout.pdf)
 - [Royal science and nomad science in A Thousand Plateaus (PDF)](https://minor-science.github.io/nomadology-reference/sciences_handout.pdf)
 - [The State's three forms in A Thousand Plateaus (PDF)](https://minor-science.github.io/nomadology-reference/state_forms_handout.pdf)
 - [Nomadology concepts: where they came from and how they were taken up (PDF)](https://minor-science.github.io/nomadology-reference/concordance_handout.pdf)
 - [After 1980: what later research says about nomadology (PDF)](https://minor-science.github.io/nomadology-reference/after1980_handout.pdf)
-- [Where the name nomadology came from, and what else it could be called (PDF)](https://minor-science.github.io/nomadology-reference/name_handout.pdf)
 - [Nomadology bibliography: works cited in the Treatise on Nomadology and Apparatus of Capture (PDF)](https://minor-science.github.io/nomadology-reference/library_handout.pdf)
 
 ## Related
