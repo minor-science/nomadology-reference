@@ -1,6 +1,6 @@
 # Nomadology reference
 
-> Reference sheets by Andrew Culp on plateaus 12 and 13 of Deleuze and Guattari's A Thousand Plateaus, the Treatise on Nomadology and the Apparatus of Capture. Each sheet has a web version and a printable PDF. Page numbers without a prefix refer to Brian Massumi's translation (Minnesota, 1987); RoV marks John Protevi's Regimes of Violence (Minnesota, 2025), the book the sheets were made to answer.
+> Reference sheets by Andrew Culp and the A Thousand Plateaus research group of The Public School Los Angeles on plateaus 12 and 13 of Deleuze and Guattari's A Thousand Plateaus, the Treatise on Nomadology and the Apparatus of Capture. Each sheet has a web version and a printable PDF. Page numbers without a prefix refer to Brian Massumi's translation (Minnesota, 1987); RoV marks John Protevi's Regimes of Violence (Minnesota, 2025), the book the sheets were made to answer.
 
 ## Pages
 
@@ -34,4 +34,5 @@
 - [Nomadology reference](https://minor-science.github.io/nomadology-reference/): reference sheets on plateaus 12 and 13
 - [Source code](https://github.com/minor-science): GitHub organization
 - [Andrew Culp](https://andrewculp.org/): author
+- [The Public School Los Angeles](https://www.instagram.com/thepublicschoolla/): its A Thousand Plateaus research group, co-author
 - [an.archeology](https://www.instagram.com/an.archeology/): the author's current project, depicting Anarcheology of Power
