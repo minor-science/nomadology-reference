@@ -151,12 +151,17 @@ def about(date):
 </div></section>"""
 
 
-def numbers(total, skip):
+def numbers(total, skip, blank=frozenset()):
     """A PDF of page numbers, one per packet page, in the outer bottom corner."""
     pages = []
     for i in range(1, total + 1):
         side = "right" if i % 2 else "left"
         txt = "" if i in skip else str(i)
+        if i in blank:
+            pages.append('<section class="pg" style="padding:0;display:flex;align-items:center;justify-content:center">'
+                         '<span style="font:500 8pt/1 \'IBM Plex Sans Condensed\',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#5B6468">'
+                         'Left blank for double-sided printing</span></section>')
+            continue
         pages.append(f'<section class="pg" style="padding:0"><span style="position:absolute;bottom:0.07in;{side}:0.32in;'
                      f'font:500 6.5pt/1 \'IBM Plex Sans Condensed\',sans-serif;color:#5B6468">{txt}</span></section>')
     path = os.path.join(tempfile.mkdtemp(), "numbers.pdf")
@@ -198,9 +203,9 @@ def main():
     w.add_blank_page(W, H)
     blanks.add(len(w.pages))
     assert len(w.pages) == total, (len(w.pages), total)
-    nums = PdfReader(numbers(total, blanks | {1}))
+    nums = PdfReader(numbers(total, blanks | {1}, blank=blanks - {total}))
     for i, p in enumerate(w.pages):
-        if (i + 1) not in blanks and i:
+        if i and (i + 1) != total:
             p.merge_page(nums.pages[i])
     w.add_outline_item("Cover", 0)
     w.add_outline_item("How to use this packet; contents", 1)
