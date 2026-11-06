@@ -26,6 +26,7 @@
 - [Nomadology concepts: where they came from and how they were taken up (PDF)](https://minor-science.github.io/nomadology-reference/concordance_handout.pdf)
 - [After 1980: what later research says about nomadology (PDF)](https://minor-science.github.io/nomadology-reference/after1980_handout.pdf)
 - [Nomadology bibliography: works cited in the Treatise on Nomadology and Apparatus of Capture (PDF)](https://minor-science.github.io/nomadology-reference/library_handout.pdf)
+- [The reference packet: all eight handouts with a guide and contents (PDF)](https://minor-science.github.io/nomadology-reference/nomadology_reference_packet.pdf)
 
 ## Related
 
