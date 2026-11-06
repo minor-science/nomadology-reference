@@ -64,6 +64,12 @@ Arslantepe had central institutions without a city (Frangipane 2012). Teotihuaca
 
 What common measure belongs to the town, as distinct from the State's comparison?
 
+Steppe pastoralists were "key players" among "core" civilizations while staying "strategically independent and small-scale" (Frachetti 2). For Amin, no "pure theory of international relations" is possible (*Unequal Development* 131-32)
+
+A world-economy "always has an urban centre of gravity, a city," from Venice and Antwerp to Amsterdam (Braudel, *The Perspective of the World* 27). In medieval Italy, Flanders and Germany, "the town won entirely" for a time (Braudel, *Capitalism and Material Life* 397)
+
+Which processes compose capitalism in a given time and place, and which still work against it?
+
 "State terror" came before its use by the State's enemies (Richardson 2016)
 
 Sanction by reputation and exclusion did most of the work in Middle Bronze Age Mesopotamia (Garfinkle and Richardson 161). Old Babylonian law treated flight as theft by whoever helped (Richardson 2023, 19-20)

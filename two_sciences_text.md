@@ -122,6 +122,12 @@ Which processes coexist in a formation, and which one do the others serve?
 
 Green: Indus cities with writing and weights but no palaces
 
+When did capitalism begin? Did trade create it?
+
+If capitalism is not a unique process all its own, which processes compose it, and what forms of power operate within it?
+
+Braudel: a world-economy always has "a dominant capitalist city" at its center
+
 Which peoples were really nomads?
 
 Without a power above to constitute it as a people, how does a way of life thicken its consistency enough to hold together?
