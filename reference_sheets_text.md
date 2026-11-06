@@ -8,7 +8,7 @@ Deleuze and Guattari built nomadology out of other people's research: myth, anth
 
 "Capitalism has reawakened the Urstaat, and given it new strength." The modern States "restore the most absolute of empires, a new 'megamachine,' whatever the novelty or timeliness of its now immanent form" (460)
 
-Much of the two plateaus was worked out aloud first, in the 1979-80 seminar at Vincennes on "Apparatuses of Capture and War Machines", thirteen sessions between November and March, with students (Éric Alliez, Georges Comtesse, Richard Pinhas, Claire Parnet) intervening. The table matches each session to the pages it develops; the list below names the other places the ideas live. Every passage, with verified quotations, is in *work/context/context_12_13.md* and under "Elsewhere" on the web reference.
+Much of the two plateaus was worked out aloud first, in the 1979-80 seminar at Vincennes on "Apparatuses of Capture and War Machines", thirteen sessions between November and March, with students (Éric Alliez, Georges Comtesse, Richard Pinhas, Claire Parnet) intervening. The table matches each session to the pages it develops; the list below names the other places the ideas were worked out. Every passage, with verified quotations, is in *work/context/context_12_13.md* and under "Elsewhere" on the web reference.
 
 The year's five oppositions: space, number, work against free action, weapons and jewels against tools and signs, and affects against sentiments. Also police before army, the phylum; Engels's three theses; the three heads of capture
 

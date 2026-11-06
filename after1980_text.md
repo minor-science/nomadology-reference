@@ -1,4 +1,4 @@
-When Deleuze and Guattari wrote the plateaus, they worked from the anthropology and archaeology of the 1970s. Those fields have changed a great deal in the decades since. Some of their findings bear out nomadology's claims. Others complicate them, and on a few points they dispute the plateaus outright. What pattern emerges? On the whole, the plateaus are most convincing when we take them as a theory of operations (the forming of a stock or the grading of a flight). Yet they are at their weakest when they make claims about origins or about which came first, which is why each row ends on what the record asks of a new nomadology.
+When Deleuze and Guattari wrote the plateaus, they worked from the anthropology and archaeology of the 1970s. Those fields have changed a great deal in the decades since. Some of their findings bear out nomadology's claims. Others complicate them, and on a few points they dispute the plateaus outright. What pattern emerges? On the whole, the plateaus are most convincing when we take them as a theory of operations (the forming of a stock or the grading of a flight). Yet they are at their weakest when they make claims about origins or about which came first, which is why each row ends on a question for a new nomadology.
 
 After stage theory fell out of favor, no whole school in these fields has worked the way nomadology does. Rather, several smaller areas of research have done so in part, and it is these that we place here. For each area, the table gives what it studies (which of the five processes it examines, capture for instance) along with its way of working, as some areas follow their material while others impose a model on it. Its relation to nomadology then appears on a single scale, from nearest to farthest, with each judgment made about a work rather than about its author.
 
@@ -88,7 +88,7 @@ The treaty of 1739 turned Jamaica's Maroons into an instrument of capture (Campb
 
 Roberts's *Freedom as Marronage* (2015) enlarges flight into a general model
 
-The colonial word marronage merges the nomad who holds in place with the migrant who flees. Split it
+The colonial word marronage merges the nomad who stays in place with the migrant who flees. Split it
 
 Teotihuacan's center was destroyed by "a premeditated, highly selective" action against the seats of power (López Luján et al. 13)
 
@@ -146,9 +146,9 @@ Craft knowledge outside the State's division of labor, and mētis ("cunning inte
 
 The Puluwat navigator's vessel holds a place while the world passes (Gladwin 181-83), a local absolute. Once a border agency enlists them, trackers put following in the State's service
 
-The axiomatic predicting without a model of the process, a "last mile" of human tasks that moves with each capture (Gray and Suri xxii), and capture as the reorganization of activity for tracking
+The axiomatic predicting without a model of the process, a "last mile" of human tasks that shifts as each one is automated (Gray and Suri xxii), and capture as the reorganization of activity for tracking
 
-Brossollet is D&G's own source for the nonbattle and the "unspecified enemy." Noyer shows a State army taking up guerrilla technique. Theorists of the Israeli army have used ATP too (Weizman), which shows how far its vocabulary travels
+Brossollet is D&G's own source for the nonbattle and the "unspecified enemy." Noyer shows a State army taking up guerrilla technique. Theorists of the Israeli army have used ATP too (Weizman), which shows how widely its vocabulary has been taken up
 
 Clean slates that keep dependents dependent on the palace, the sale that confirms a depersonalization already inflicted (capture presupposing itself), and wealth disparities measured as a numbered number
 

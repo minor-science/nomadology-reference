@@ -1,8 +1,8 @@
-Deleuze and Guattari “define social formations by machinic processes and not by modes of production” (435), which is to say that each column below names a process, not a kind of society. In fact, every society has all five “in perpetual interaction” (430), though usually one of them dominates and gives the society its character. They coexist “extrinsically and intrinsically” (435-37), which is to say between societies, as the brackets show, and within each one, as when warding off moves into towns (the bottom row). Each row puts the same question to all five, while the columns run from the outside, through the inside, to what crosses all of them (Axiom I, 351).
+Deleuze and Guattari “define social formations by machinic processes and not by modes of production” (435), which is to say that each column below names a process, not a kind of society. In fact, every society has all five “in perpetual interaction” (430), though usually one of them dominates and gives the society its character. They coexist “extrinsically and intrinsically” (435-37), which is to say between societies, as the brackets show, and within each one, as when warding off also operates in towns (the bottom row). Each row puts the same question to all five, while the columns run from the outside, through the inside, to what crosses all of them (Axiom I, 351).
 
 Protevi’s marronage column is tentative, and deliberately so. In *Regimes of Violence* he announces “a becoming-maroon” beside the other becomings (RoV 96), sets out to supplement Deleuze and Guattari’s topology with maroons (102-03), and describes marronage as “a set of interlinking processes” whose focus is “marginality” (108). Later, however, he speculates that maroon societies combine prevention-anticipation, war machines, “and perhaps ecumenical” processes (119). Is marronage a process of its own, or a mix of the others? The column is meant to pose that question. The column sits between the war machine and capture because Protevi places the maroon zone “neither ‘smooth’ nor ‘striated’” (104).
 
-“Each process can also function at a ‘power’ other than its own”: the State appropriates the war machine, the instruments of polarization, and warding off, which in turn moves into towns, States, and capitalism (437)
+“Each process can also function at a ‘power’ other than its own”: the State appropriates the war machine, the instruments of polarization, and warding off, which also operates in towns, States, and even capitalism (437)
 
 Protevi: “state-establishing maroons” can “partake in the machinic process of overcoding” (RoV 103)
 
@@ -12,7 +12,7 @@ Segmentary, egalitarian: anticipates the town (e.g., village halves of equal sta
 
 Encompassing, hierarchized: anticipates the State (e.g., one lineage on top) (433, cf. Lévi-Strauss)
 
-Moves into towns and States, and even into capitalism (e.g., bands with “their own towns”) (437)
+Also operates in towns and States, and even in capitalism (e.g., bands with “their own towns”) (437)
 
 Creative: “a creative line of flight” (guerrilla, popular war)
 
@@ -96,7 +96,7 @@ Power “of the middle”: forced coordination (councils, magistrates), “egali
 
 “The consolidation of the diverse as such” (one church across many kingdoms) (436)
 
-Warding off holds off both thresholds, State and town (431-33)
+Warding off works against both thresholds, State and town (431-33)
 
 “A capture of the apparatus of capture itself” (RoV 104)
 
