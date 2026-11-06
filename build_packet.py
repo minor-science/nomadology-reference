@@ -3,8 +3,9 @@
   nomadology_reference_packet.pdf
 
 Cover, guide and contents first, then the eight handouts, then a page about the project.
-Each handout starts on a right-hand page (blank pages are added after sheets with an odd
-number of pages), packet page numbers are stamped in the outer bottom corner, and the PDF
+Two versions: nomadology_reference_packet.pdf for screens (no blank pages), and
+nomadology_reference_packet_print.pdf for double-sided printing, where each handout starts on a
+right-hand page (blank pages are added after sheets with an odd number of pages). Packet page numbers are stamped in the outer bottom corner, and the PDF
 gets bookmarks for every sheet.
 
 Run after the handout PDFs are regenerated and before seo.py (which sets the PDF Author):
@@ -22,7 +23,8 @@ from pypdf import PdfReader, PdfWriter, PageObject
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-OUT = os.path.join(HERE, "nomadology_reference_packet.pdf")
+OUT = os.path.join(HERE, "nomadology_reference_packet.pdf")  # for screens: no blank pages
+OUT_PRINT = os.path.join(HERE, "nomadology_reference_packet_print.pdf")  # for double-sided printing
 W, H = 792, 612  # letter landscape, in points, as every handout
 URL = "https://minor-science.github.io/nomadology-reference/"
 TPS = "https://www.instagram.com/thepublicschoolla/"
@@ -101,7 +103,7 @@ def chrome_pdf(body, path):
         os.unlink(src)
 
 
-def front(date, starts):
+def front(date, starts, duplex):
     rows = "".join(f'<li><span class="n">{n}</span><span class="t">{html.escape(t)}<span class="d">{d}</span></span>'
                    f'<span class="p">{starts[n]}</span></li>' for n, t, _, d in SHEETS)
     cover = f"""<section class="pg cover"><div>
@@ -125,9 +127,15 @@ def front(date, starts):
 <h3 class="lab">How the sheets connect</h3>
 <p>The five machinic processes (III) and the two sciences (IV) are companions, the first for the plateaus' social formations and the second for their kinds of knowledge. The State's three forms (V) takes one proposition of capture in detail. After 1980 (VII) tests the plateaus' claims against later research, while the concordance (VI) and the bibliography (VIII) follow the concepts and the works cited back to their sources.</p>
 <h3 class="lab">Printing</h3>
-<p>Print on both sides and flip on the short edge. Each sheet begins on a right-hand page, so a few pages are left blank.</p>
+{PRINTING[duplex]}
 </div><div><h2>Contents</h2><ol class="toc">{rows}</ol></div></section>"""
     return cover + guide
+
+
+PRINTING = {
+    True: "<p>Print on both sides and flip on the short edge. Each sheet begins on a right-hand page, so a few pages are left blank.</p>",
+    False: "<p>This version has no blank pages, for reading on screen. For double-sided printing, use the print version, nomadology_reference_packet_print.pdf at the address on the cover, in which each sheet begins on a right-hand page.</p>",
+}
 
 
 def about(date):
@@ -151,11 +159,11 @@ def about(date):
 </div></section>"""
 
 
-def numbers(total, skip, blank=frozenset()):
+def numbers(total, skip, blank=frozenset(), duplex=True):
     """A PDF of page numbers, one per packet page, in the outer bottom corner."""
     pages = []
     for i in range(1, total + 1):
-        side = "right" if i % 2 else "left"
+        side = "right" if (i % 2 or not duplex) else "left"
         txt = "" if i in skip else str(i)
         if i in blank:
             pages.append('<section class="pg" style="padding:0;display:flex;align-items:center;justify-content:center">'
@@ -170,21 +178,21 @@ def numbers(total, skip, blank=frozenset()):
     return path
 
 
-def main():
+def build(out, duplex):
     date = datetime.date.today().strftime("%B %Y")
     readers = {f: PdfReader(os.path.join(HERE, f)) for _, _, f, _ in SHEETS}
-    # lay out the pages: cover 1, guide 2, then each sheet from a right-hand (odd) page
+    pad = (lambda k: k % 2) if duplex else (lambda k: 0)
+    # lay out the pages: cover 1, guide 2, then each sheet (from a right-hand page when duplex)
     plan, starts, page = [], {}, 3
     for n, t, f, _ in SHEETS:
         starts[n] = page
         k = len(readers[f].pages)
         plan.append((n, t, f, k))
-        page += k + (k % 2)
-    about_page = page
-    total = about_page + 1  # the about page, then a blank back
+        page += k + pad(k)
+    total = page + (1 if duplex else 0)  # the about page, and a blank back when duplex
     tmp = tempfile.mkdtemp()
     fm, bm = os.path.join(tmp, "front.pdf"), os.path.join(tmp, "about.pdf")
-    chrome_pdf(front(date, starts), fm)
+    chrome_pdf(front(date, starts, duplex), fm)
     chrome_pdf(about(date), bm)
     w = PdfWriter()
     blanks = set()
@@ -195,28 +203,35 @@ def main():
         marks.append((f"{n}. {t}", len(w.pages)))
         for p in readers[f].pages:
             w.add_page(p)
-        if k % 2:
+        if pad(k):
             w.add_blank_page(W, H)
             blanks.add(len(w.pages))
     marks.append(("About", len(w.pages)))
     w.add_page(PdfReader(bm).pages[0])
-    w.add_blank_page(W, H)
-    blanks.add(len(w.pages))
+    back = None
+    if duplex:
+        w.add_blank_page(W, H)
+        back = len(w.pages)
     assert len(w.pages) == total, (len(w.pages), total)
-    nums = PdfReader(numbers(total, blanks | {1}, blank=blanks - {total}))
+    nums = PdfReader(numbers(total, blanks | {1}, blank=blanks, duplex=duplex))
     for i, p in enumerate(w.pages):
-        if i and (i + 1) != total:
+        if i and (i + 1) != back:
             p.merge_page(nums.pages[i])
     w.add_outline_item("Cover", 0)
     w.add_outline_item("How to use this packet; contents", 1)
     for title, idx in marks:
         w.add_outline_item(title, idx)
-    w.add_metadata({"/Title": "Nomadology reference: the packet", "/Author": BYLINE,
+    w.add_metadata({"/Title": "Nomadology reference: the packet" + (" (print)" if duplex else ""), "/Author": BYLINE,
                     "/Subject": "Reference sheets for A Thousand Plateaus, plateaus 12 and 13"})
     w.page_mode = "/UseOutlines"
-    with open(OUT, "wb") as f:
+    with open(out, "wb") as f:
         w.write(f)
-    print(f"{OUT}: {total} pages, sheets start at", ", ".join(f"{n} {s}" for n, s in starts.items()))
+    print(f"{out}: {total} pages, sheets start at", ", ".join(f"{n} {s}" for n, s in starts.items()))
+
+
+def main():
+    build(OUT, duplex=False)
+    build(OUT_PRINT, duplex=True)
 
 
 if __name__ == "__main__":

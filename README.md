@@ -14,7 +14,7 @@ Each sheet is a printable PDF (the `*_handout.pdf` files) with a web version of 
 | After 1980 | `after1980_handout.pdf` | `after1980.html`, `after1980_handout.html` |
 | State forms | `state_forms_handout.pdf` | `state_forms_handout.html`, `state_forms.html` |
 
-All eight handouts are also gathered in one PDF, `nomadology_reference_packet.pdf` (32 pages: cover, guide and contents, the sheets in the order of the index, each starting on a right-hand page, and a page about the project). `build_packet.py` builds it from the handout PDFs, so rerun it after any handout changes: `python build_packet.py` (needs `pypdf` and Google Chrome).
+All eight handouts are also gathered in one PDF, `nomadology_reference_packet.pdf` (27 pages: cover, guide and contents, the sheets in the order of the index, and a page about the project), with `nomadology_reference_packet_print.pdf` (32 pages) for double-sided printing, in which each sheet starts on a right-hand page. `build_packet.py` builds it from the handout PDFs, so rerun it after any handout changes: `python build_packet.py` (needs `pypdf` and Google Chrome).
 
 The `.html` files are self-contained: open them in a browser. The `build_*.py` scripts generate the sheets, and the `*_text.md` files are plain-text dumps of their contents; they read further source material from the project they were made in, so they are included to show how the sheets were built rather than to run as is.
 
