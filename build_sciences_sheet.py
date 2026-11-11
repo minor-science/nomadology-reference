@@ -133,7 +133,7 @@ QUESTIONS = [
         ("Who designed this?", "What division of labor does this knowledge assume?", "368-69", "The Gothic journeymen against the architect's plane on paper (368)"),
     ]),
     ("Problems and axioms", [
-        ("What is the solution?", "Who gets to pose the problem, and what remains undecidable once it is posed?", "461, 471-73", "Hudson: each royal debt cancellation as an axiom added to keep an order running"),
+        ("What is the solution?", "Who gets to pose the problem, and what remains undecidable once it is posed?", "461, 471-73", "Hudson on the clean slates of the ancient Near East, which is to say, royal proclamations that canceled debts so that an order could keep running"),
         ("Was this resistance or destruction?", "Does this line create new relations, or does it only destroy?", "422-23", "Munkh-Erdene: the warband of a warlord as the \"nomadic origin of the state\""),
     ]),
 ]

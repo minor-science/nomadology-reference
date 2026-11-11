@@ -192,7 +192,7 @@ What is the solution?
 
 As operating rules are added or removed, what of a fuzzy multiplicity do they contain, and what evades them?
 
-Hudson: each royal debt cancellation as an axiom added to keep an order running
+Hudson on the clean slates of the ancient Near East, which is to say, royal proclamations that canceled debts so that an order could keep running
 
 Were they warlike?
 
