@@ -192,7 +192,7 @@ What is the solution?
 
 As operating rules are added or removed, what of a fuzzy multiplicity do they contain, and what evades them?
 
-Hudson on the clean slates of the ancient Near East, which is to say, royal proclamations that canceled debts so that an order could keep running
+Babylonian kings canceled debts to "restore order," though for Hudson "the clean slate actually improved the ruler's own fiscal position"
 
 Were they warlike?
 
